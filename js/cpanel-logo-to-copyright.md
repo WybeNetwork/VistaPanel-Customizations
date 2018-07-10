@@ -24,6 +24,11 @@ Example :
     var primarySite = 'Your Primary site URL (With HTTP:// or HTTPS://)';
     ```
 
+#NOTE : USE GITHACK OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.
+The RAW option on GitHub can return an incorrect Content-Type header which can makes thing goes not the way it supposed to be.
+* GitHack : https://raw.githack.com/
+* GitCDN : http://gitcdn.link/
+
 The full code :
 
 ```
@@ -35,5 +40,5 @@ The full code :
     var primarySite = 'Your Primary site URL (With HTTP:// or HTTPS://)';
 
 </script>
-<script src="https://raw.githubusercontent.com/PlanetGamingGG/myownfreehost-themes-misc/master/js/cpanel-logo-to-copyright.js" type="text/javascript"></script>
+<script src="https://raw.githack.com/PlanetGamingGG/myownfreehost-themes-misc/master/js/cpanel-logo-to-copyright.js" type="text/javascript"></script>
 ```

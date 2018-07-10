@@ -17,3 +17,19 @@ Variable :
 
 If the variable is not declared, an affliate code for my account (PlanetCloud) will be used.
 In case this does actually pay money, the money will go into my account and I will appriciate it as a donation :).
+
+#NOTE : USE GITHACK OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.
+The RAW option on GitHub can return an incorrect Content-Type header which can makes thing goes not the way it supposed to be.
+* GitHack : https://raw.githack.com/
+* GitCDN : http://gitcdn.link/
+
+The full code :
+
+```
+<script type="text/javascript">
+	/* OPTIONAL
+	var affCode = 'AFFLIATE_CODE_HERE';
+	*/
+</script>
+<script src="https://raw.githack.com/PlanetGamingGG/myownfreehost-themes-misc/master/js/responsive-domain-search.js" type="text/javascript"></script>
+```
