@@ -17,14 +17,16 @@ Required variable's :
     * primarySite -> Primary site URL (With HTTP:// or HTTPS://)
 
 Example :
-	`var companyName = 'Your company name';
+	```
+    var companyName = 'Your company name';
     var companyLogo = 'Your company logo';
     var companyStarted = 'What year did your company started?';
-    var primarySite = 'Your Primary site URL (With HTTP:// or HTTPS://)';`
+    var primarySite = 'Your Primary site URL (With HTTP:// or HTTPS://)';
+    ```
 
 The full code :
 
-	`
+```
 <script type="text/javascript">
 
 	var companyName = 'Your company name';
@@ -33,4 +35,5 @@ The full code :
     var primarySite = 'Your Primary site URL (With HTTP:// or HTTPS://)';
 
 </script>
-<script src="https://raw.githubusercontent.com/PlanetGamingGG/myownfreehost-themes-misc/master/js/cpanel-logo-to-copyright.js" type="text/javascript"></script>`
+<script src="https://raw.githubusercontent.com/PlanetGamingGG/myownfreehost-themes-misc/master/js/cpanel-logo-to-copyright.js" type="text/javascript"></script>
+```
