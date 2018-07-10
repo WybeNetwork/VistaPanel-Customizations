@@ -33,4 +33,4 @@ The full code :
     var primarySite = 'Your Primary site URL (With HTTP:// or HTTPS://)';
 
 </script>
-<script src="" type="text/javascript"></script>`
+<script src="https://raw.githubusercontent.com/PlanetGamingGG/myownfreehost-themes-misc/master/js/cpanel-logo-to-copyright.js" type="text/javascript"></script>`
