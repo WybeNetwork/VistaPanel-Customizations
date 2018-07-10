@@ -27,4 +27,12 @@ document.addEventListener("DOMContentLoaded", function() {
             widget.appendChild(row)
     });
 
+    /* 
+     *  Created at 10 July 2018 by PlanetCloud
+     *  DO NOT REMOVE CREDITS!
+     *  Created for: VPT (VistaPanel Theme Project)
+     *  Design & Script by : PlanetCloud
+     *
+     */
+
 });
