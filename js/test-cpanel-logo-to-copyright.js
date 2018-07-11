@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		companyStarted = Number(PAGE.companyStarted);
 
-		cpLogoA.href = primarySite;
+		cpLogoA.href = PAGE.primarySite;
 		cpLogoA.target = '_blank';
-		cpLogoA.title = companyName;
+		cpLogoA.title = PAGE.companyName;
 
 		cpLogoA.innerHTML = '<img id="imgPoweredByCpanel" width="200px" src="'+PAGE.companyLogo+'" alt="'+PAGE.companyName+'" style="display: inline-block; z-index: 999;">';
 
