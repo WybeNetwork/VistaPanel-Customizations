@@ -8,6 +8,8 @@ Everything here is **FREE** as long as you followed the LINCENSE.
 
 Request permission to remove credits here :  https://goo.gl/forms/aBcB3AzoGCiSylSu2
 
+# Important
+Please check the issues tab to see what's currently buggy or not working.
 
 # Usage
 Go to JS/CSS folder and find the script you wanted to use.
