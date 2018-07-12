@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     /* 
-     *  Created at 10 July 2018 by PlanetCloud
+     *  Created at 10 July 2018 by PlanetCloud.
      *  DO NOT REMOVE CREDITS!
-     *  Created for: VPT (VistaPanel Theme Project)
-     *  Design & Script by : PlanetCloud
-     *
+     *  Created for: VPT (VistaPanel Theme Project).
+     *  Idea's from : InfinityFree.
+     *  
      */
 
 });
