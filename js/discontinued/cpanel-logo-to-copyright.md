@@ -1,3 +1,5 @@
+# PLEASE READ https://github.com/PlanetGamingGG/myownfreehost-themes-misc/issues/1
+
 cPanel Logo to Copyright
 
 Where to put?
