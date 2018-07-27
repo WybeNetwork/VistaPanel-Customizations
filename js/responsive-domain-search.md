@@ -34,5 +34,5 @@ The full code :
 <script src="https://raw.githack.com/PlanetGamingGG/myownfreehost-themes-misc/master/js/responsive-domain-search.js" type="text/javascript"></script>
 ```
 
-Created on 10 July 2018 by PlanetCloud
+Created on 10 July 2018 by PlanetCloud  
 Last modified at 27 July 2018 By Christine (Cyrl)
