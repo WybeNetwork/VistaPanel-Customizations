@@ -28,8 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	/* 
 	 *	Created at 10 July 2018 by PlanetCloud
+	 *	Modified at 25 August 2018 by PCTipsGR
 	 *	DO NOT REMOVE CREDITS!
-	 *	Created for: VPT (VistaPanel Theme Project)
+	 *	Created for: VPT (VistaPanel Team)
 	 *	Design & Script by : PlanetCloud
 	 *
 	 */
