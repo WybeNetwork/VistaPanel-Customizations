@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     /* 
      *  Created at 10 July 2018 by PlanetCloud.
-     *  Last modified at 27 July 2018 by Christine (Cyrl)
+     *  Modified at 27 July 2018 by Christine (Cyrl)
+     *  Last modified at 27 July 2018 by PCTipsGR
      *  DO NOT REMOVE CREDITS!
      *  Created for: VPT (VistaPanel Team).
      *  Idea's from : InfinityFree.
