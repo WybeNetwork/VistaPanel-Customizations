@@ -1,26 +1,26 @@
-# myownfreehost-themes-misc
-A repostory filled with JS and CSS for customizing or improving vPanel.
+# VistaPanel Customizations
+A repostory filled with JS and CSS scripts for customizing or improving VistaPanel.
 
-You **MUST** read and follow the LINCENSE file before using any of the code here.
-Developed by PlanetCloud for the MOFH community.
+You **MUST** read and follow the LICENSE file before using any of the code here.
+Developed by VPT for the MOFH community.
 
-Everything here is **FREE** as long as you followed the LINCENSE.
+Everything here is **FREE** as long as you followed the LICENSE.
 
-Request permission to remove credits here :  https://goo.gl/forms/aBcB3AzoGCiSylSu2
+Request permission to remove credits from PlanetCloud's scripts here :  https://goo.gl/forms/aBcB3AzoGCiSylSu2
 
 # Important
 Please check the issues tab to see what's currently buggy or not working.
 
 # Usage
-Go to JS/CSS folder and find the script you wanted to use.
+Go to each script's folder and find the script you wanted to use.
 
 A script will have 3 files :
   * The script itself (.js)
   * Minified version of the script (.min.js)
-  * Instruction (.md)
+  * Instructions (.md)
   
-Read the instruction file first, after understanding the instruction go ahead and
+Read the instructions file first, after understanding it go ahead and
 use GitHack or GitCDN to create a link to the file with the proper Content-Type header
 or download the file and upload it to your site or to a CDN.
 
-The rest, see .md files.
+See the .md files for the rest.
