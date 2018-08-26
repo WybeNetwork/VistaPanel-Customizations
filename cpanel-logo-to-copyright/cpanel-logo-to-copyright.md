@@ -1,4 +1,4 @@
-#cPanel Logo to Copyright
+# cPanel Logo to Copyright
 
 Where to put?
 Anywhere
@@ -25,7 +25,7 @@ Example :
     }
     ```
 
-###NOTE : USE GITHACK OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.
+### NOTE : USE GITHACK OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.
 The RAW option on GitHub can return an incorrect Content-Type header which can makes thing goes not the way it supposed to be.
 * GitHack : https://raw.githack.com/
 * GitCDN : http://gitcdn.link/
