@@ -27,8 +27,9 @@ Example :
 
 ### NOTE : USE GITHACK OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.  
 The RAW option on GitHub can return an incorrect Content-Type header which can makes thing goes not the way it supposed to be.  
-* GitHack : https://raw.githack.com/  
-* GitCDN : http://gitcdn.link/  
+* GitHack : https://raw.githack.com/  [DO NOT USE]
+* GitCDN : http://gitcdn.link/  [DO NOT USE]
+* RawGit : http://rawgit.com/ [USE THIS]
 
 The full code :  
 
@@ -43,5 +44,5 @@ The full code :
     }  
 
 </script>  
-<script src="https://rawcdn.githack.com/VPTOfficial/VistaPanel-Customizations/master/cpanel-logo-to-copyright/cpanel-logo-to-copyright.js" type="text/javascript"></script>  
+<script src="https://rawgit.com/VPTOfficial/VistaPanel-Customizations/master/cpanel-logo-to-copyright/cpanel-logo-to-copyright.js" type="text/javascript"></script>  
 ```
