@@ -43,5 +43,5 @@ The full code :
     }  
 
 </script>  
-<script src="https://raw.githack.com/PlanetGamingGG/myownfreehost-themes-misc/master/js/cpanel-logo-to-copyright.js" type="text/javascript"></script>  
+<script src="https://rawcdn.githack.com/VPTOfficial/VistaPanel-Customizations/master/cpanel-logo-to-copyright/cpanel-logo-to-copyright.js" type="text/javascript"></script>  
 ```
