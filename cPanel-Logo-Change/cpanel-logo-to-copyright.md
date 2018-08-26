@@ -6,7 +6,7 @@ Where to put?
 Anywhere
 
 Installation : 
-Create a script tag with src pointing to cpanel-logo-to-copyright.js or cpanel-logo-to-copyright.min.js for minified version and place it on the footer ads (Recomended).
+Create a script tag with src pointing to cpanel-logo-to-copyright.js or cpanel-logo-to-copyright.min.js for minified version and place it on the footer ads (Recommended).
 
 Initialization :
 Some variable's needs to be declared before the script is executed.
