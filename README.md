@@ -23,4 +23,4 @@ Read the instructions file first, after understanding it go ahead and
 use GitHack or GitCDN to create a link to the file with the proper Content-Type header
 or download the file and upload it to your site or to a CDN.
 
-See the .md files for the rest.
+See the .md files for the specific instruction for each script.
