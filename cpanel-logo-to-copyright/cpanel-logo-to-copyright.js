@@ -31,4 +31,4 @@ document.addEventListener("DOMContentLoaded", function() {
 	 *	DO NOT REMOVE CREDITS!
 	 *
 	 */
-}
+});
