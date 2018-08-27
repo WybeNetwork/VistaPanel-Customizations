@@ -6,7 +6,7 @@ Developed by VPT for the MOFH community.
 
 Everything here is **FREE** as long as you followed the LICENSE.
 
-Request permission to remove credits from PlanetCloud's scripts here :  https://goo.gl/forms/aBcB3AzoGCiSylSu2
+Request permission to remove credits from our scripts here: https://discord.gg/FTyFXsU
 
 # Important
 Please check the issues tab to see what's currently buggy or not working.
