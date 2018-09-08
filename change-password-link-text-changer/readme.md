@@ -1,4 +1,4 @@
-# Tutorials Link Changer
+# `Change Password` Link and Text Changer
 
 Where to put?  
 In the footer advert area of vPanel  
