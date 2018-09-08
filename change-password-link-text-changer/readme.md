@@ -22,4 +22,4 @@ Put the following code in the Fotter Advert Area (Recommended) of your hosting v
 <script src="https://rawgit.com/VPTOfficial/VistaPanel-Customizations/master/change-password-link-text-changer/change-password-link-text-changer.js" type="text/javascript"></script>  
 ```
 
-###NOTE: YOU ARE NOT ALLOWED TO REMOVE CREDITS FROM JS FILE. YOU CAN REQUEST CREDIT REMOVAL AT OUR SUPPORT FORUMS https://vpthemes.win
+### NOTE: YOU ARE NOT ALLOWED TO REMOVE CREDITS FROM JS FILE. YOU CAN REQUEST CREDIT REMOVAL AT OUR SUPPORT FORUMS https://vpthemes.win
