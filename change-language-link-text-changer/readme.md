@@ -11,7 +11,7 @@ The RAW option on GitHub can return an incorrect Content-Type header which can m
 
 Installation :   
 
-Put the following code in the Fotter Advert Area (Recommended) of your hosting vPanel from MyOwnFreeHost admin area and replace `https://vpthemes.win` with your website url and replace `VPThemes` with any Name or text.
+Put the following code in the Footer Advert Area (Recommended) of your hosting vPanel from MyOwnFreeHost admin area and replace `https://vpthemes.win` with your website url and replace `VPThemes` with any Name or text.
 `var change_language_link = "your_website_url"` will replace the `Change Language` url from vPanel and `var change_language_text = "Your_Text"` will replace the `Change Language` text from `Change Language` to whatever you enter as text at the place of `Your_Text`
 
 ```
