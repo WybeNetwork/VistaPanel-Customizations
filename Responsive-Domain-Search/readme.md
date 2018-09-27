@@ -4,7 +4,7 @@ Used for :
 Making the VistaPanel search form responsive, so that it does not break the theme.
 
 Where to put?  
-Anywhere in control panel ads, preferably in footer section.
+Put in Header Advert Area (Required)
 
 Installation :   
 Create a script tag with src pointing to responsive-domain-search.js or responsive-domain-search.min.js for minified version.  
@@ -36,4 +36,5 @@ The full code, using Githack :
 
 Created on 10 July 2018 by PlanetCloud  
 Modified at 27 July 2018 By Christine (Cyrl)
-Last modified on 25 August by PCTipsGR
+Modified at 25 August by PCTipsGR
+Last modified on 28th September by MAHOfficial
