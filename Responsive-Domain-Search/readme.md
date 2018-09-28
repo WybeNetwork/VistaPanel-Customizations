@@ -18,7 +18,7 @@ Variable :
 If the variable is not declared, an affiliate code for my account (PlanetCloud) will be used.  
 In case this does actually pay money, the money will go into my account and I will appreciate it as a donation :).  
 
-# USE RAWGIT OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.  
+## USE RAWGIT OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.  
 The RAW option on GitHub can return an incorrect Content-Type header which can make the code not load at all.  
 * RawGit : https://rawgit.com/  
 * GitCDN : http://gitcdn.xyz/  
