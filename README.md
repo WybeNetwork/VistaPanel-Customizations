@@ -1,5 +1,5 @@
 # VistaPanel Customizations
-A repository filled with JS and CSS scripts for customizing VistaPanel.
+#### A repository filled with JS and CSS scripts for customizing VistaPanel.
 
 You **MUST** read and follow the LICENSE file before using any of the code here.
 Developed by VPT for the MOFH community.
