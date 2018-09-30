@@ -4,7 +4,9 @@
 Making the VistaPanel search form responsive, so that it does not break the theme(s).
 
 ## Where to put?  
-Put in Header Advert Area (Required)
+Put in Header Advert Area (Must)  
+Due to this issue (https://github.com/VPTOfficial/VistaPanel-Customizations/issues/4) reported by MAHOfficial, the code doesn't seem to run properly on other pages. Thank you for your report.  
+
 
 ## Installation :   
 Create a script tag with src pointing to responsive-domain-search.js or responsive-domain-search.min.js for minified version.  
@@ -37,4 +39,5 @@ The full code, using RawGit:
 Created on 10 July 2018 by PlanetCloud  
 Modified at 27 July 2018 By Christine (Cyrl)  
 Modified at 25 August by PCTipsGR  
-Last Modified on 28th September by MAHOfficial and PCTipsGR  
+Modified on 28th September by MAHOfficial and PCTipsGR  
+Last Modified on 30th September by PlanetCloud    
