@@ -16,10 +16,10 @@ Put the following code in the Footer Advert Area (Recommended) of your hosting v
 
 ```
 <script type="text/javascript">  
-    var change_language_link = "https://vpthemes.win"
-	var change_language_text = "VPThemes"
+    var change_language_link = "https://vpthemes.win",
+	change_language_text = "VPThemes";
 </script>  
 <script src="https://rawgit.com/VPTOfficial/VistaPanel-Customizations/master/change-language-link-text-changer/change-language-link-text-changer.js" type="text/javascript"></script>  
 ```
 
-###NOTE: YOU ARE NOT ALLOWED TO REMOVE CREDITS FROM JS FILE. YOU CAN REQUEST CREDIT REMOVAL AT OUR SUPPORT FORUMS https://vpthemes.win
+### NOTE: YOU ARE NOT ALLOWED TO REMOVE CREDITS FROM JS FILE. YOU CAN REQUEST CREDIT REMOVAL AT OUR SUPPORT FORUMS https://vpthemes.win
