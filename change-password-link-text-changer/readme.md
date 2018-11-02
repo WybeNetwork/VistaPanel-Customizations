@@ -1,4 +1,4 @@
-# `Change Password` Link and Text Changer
+# "Change Password" Link and Text Changer
 
 Where to put?  
 In the footer advert area of vPanel  
@@ -16,8 +16,8 @@ Put the following code in the Fotter Advert Area (Recommended) of your hosting v
 
 ```
 <script type="text/javascript">  
-    var change_password_link = "https://vpthemes.win"
-	var change_password_text = "VPThemes"
+    var change_password_link = "https://vpthemes.win",
+	change_password_text = "VPThemes";
 </script>  
 <script src="https://rawgit.com/VPTOfficial/VistaPanel-Customizations/master/change-password-link-text-changer/change-password-link-text-changer.js" type="text/javascript"></script>  
 ```
