@@ -3,25 +3,24 @@
 ## Used for:  
 Making the VistaPanel search form responsive, so that it does not break the theme(s).
 
-## Where to put?  
-Put in Header Advert Area (Must)  
-Due to this issue (https://github.com/VPTOfficial/VistaPanel-Customizations/issues/4) reported by MAHOfficial, the code doesn't seem to run properly on other pages. Thank you for your report.  
+## Where should I put it?  
+Put it in Header Advert Area (IMPORTANT)  
+Due to [this issue](https://github.com/VPTOfficial/VistaPanel-Customizations/issues/4) reported by [MAHOfficial](https://github.com/mahofficial), the code doesn't seem to run if you put it elsewhere. Thank you for your report.  
 
+## Installation:   
+Create a script tag with `src` pointing to `responsive-domain-search.js` or `responsive-domain-search.min.js` for minified version.  
 
-## Installation :   
-Create a script tag with src pointing to responsive-domain-search.js or responsive-domain-search.min.js for minified version.  
+## Initialization:   
+A variable "affiliate code" can be defined to put your own affiliate code on the domain search, but, according to iFastNet, this will not give you any money.  
 
-## Initialization :   
-A variable "affiliate code" can be defined to put your own affiliate code on the domain search but according to iFastNet, this will not give you any money.  
-
-Variable :   
+Variable:   
 	* affCode -> 5 digit affiliate code.  
 
 **If the variable is not declared, an affiliate code for my account (PlanetCloud) will be used.**  
-**In case this does actually pay money, the money will go into my account and I will appreciate it as a donation :).**  
+**In case this method does actually pay money, the money will go into my account and I will appreciate it as a donation :)**  
 
-## USE RAWGIT OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.  
-The RAW option on GitHub can return an incorrect Content-Type header which can make the code not load at all.  
+##  Content-Type Header Errors
+The RAW option on GitHub can return an incorrect Content-Type header which makes the code not load at all.  
 * RawGit : https://rawgit.com/  
 * GitCDN : http://gitcdn.xyz/  
 
