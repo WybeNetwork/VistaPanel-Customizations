@@ -1,16 +1,16 @@
 # Responsive Domain Search  
 
-## Used for:  
-Making the VistaPanel search form responsive, so that it does not break the theme(s).
+## What does it do?  
+It makes the VistaPanel search form responsive, so that it does not break the vP theme(s).
 
 ## Where should I put it?  
 Put it in Header Advert Area (IMPORTANT)  
-Due to [this issue](https://github.com/VPTOfficial/VistaPanel-Customizations/issues/4) reported by [MAHOfficial](https://github.com/mahofficial), the code doesn't seem to run if you put it elsewhere. Thank you for your report.  
+Due to [this issue](https://github.com/VPTOfficial/VistaPanel-Customizations/issues/4) reported by [MAHOfficial](https://github.com/mahofficial), the code doesn't seem to run if you put it elsewhere. Thanks for reporting it.  
 
-## Installation:   
+## How can I install it?   
 Create a script tag with `src` pointing to `responsive-domain-search.js` or `responsive-domain-search.min.js` for minified version.  
 
-## Initialization:   
+## How to initialize an affiliate code into the search form?   
 A variable "affiliate code" can be defined to put your own affiliate code on the domain search, but, according to iFastNet, this will not give you any money.  
 
 Variable:   
@@ -21,10 +21,9 @@ Variable:
 
 ##  Content-Type Header Errors
 The RAW option on GitHub can return an incorrect Content-Type header which makes the code not load at all.  
-* RawGit : https://rawgit.com/  
-* GitCDN : http://gitcdn.xyz/  
+To solve this, we need an external service which adds the correct type, like jsDelivr.
 
-The full code, using RawGit:
+The full code, using jsDelivr:
 
 ```
 <script type="text/javascript">
@@ -32,11 +31,12 @@ The full code, using RawGit:
 	var affCode = 'AFFLIATE_CODE_HERE';
 	*/
 </script>
-<script src="https://rawgit.com/VPTOfficial/VistaPanel-Customizations/master/Responsive-Domain-Search/responsive-domain-search.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/responsive-domain-search/responsive-domain-search.js" type="text/javascript"></script>
 ```
-
-Created on 10 July 2018 by PlanetCloud  
-Modified at 27 July 2018 By Christine (Cyrl)  
-Modified at 25 August by PCTipsGR  
-Modified on 28th September by MAHOfficial and PCTipsGR  
-Last Modified on 30th September by PlanetCloud    
+## Changelog
+* Created on 10 July 2018 by [PlanetCloud](https://github.com/PlanetGamingGG)  
+* Modified at 27 July 2018 by Christine (Cyrl)  
+* Modified at 25 August 2018 by [PCTipsGR](https://github.com/PCTipsGR)  
+* Modified on 28th September 2018 by [MAHOfficial](https://github.com/mahofficial) and [PCTipsGR](https://github.com/PCTipsGR)  
+* Modified on 30th September 2018 by [PlanetCloud](https://github.com/PlanetGamingGG)    
+* Last Modified on 22th November 2018 by [PCTipsGR](https://github.com/PCTipsGR)
