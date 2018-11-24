@@ -1,16 +1,19 @@
 # Tutorials Link Changer
 
-Where to put?  
-Anywhere  
+## What does it do?  
+Basically what the title says! It changes the "Tutorials" link on VistaPanel with your own Knowledge Base link.  
 
-Installation :   
-Create a script tag with src pointing to tutorial-link-changer.js or tutorial-link-changer.min.js for minified version and place it on the footer ads (Recommended).  
+## Where should I put it?  
+You can put it anywhere, although we recommend to put it on Footer Advert Area.  
 
-Initialization :  
-An object called "b" (lowercase) must be initialized with the following variable  
-Note : May be combined with the b var on cpanel-logo-to-copyright and any other scripts.  
+## How can I install it?   
+Create a script tag with `src` pointing to `tutorial-link-changer.js` or `tutorial-link-changer.min.js` for minified version.  
 
-Required variable's :  
+In case you do not know how to do that or are too lazy to do it, we have provided a ready code below.  
+
+### How to initialize it?
+An object called "b" (lowercase) must be initialized with the following variables:  
+
     * tutorial -> URL of your tutorials with HTTP Protocol.  
 
 Example :  
@@ -19,14 +22,14 @@ Example :
         tutorial : "http://pch.com/help/",    
     }  
     ```
+#### Note: It can be combined with the b variable on cpanel-logo-to-copyright and any other scripts using it.  
 
-### NOTE : USE GITHACK OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.  
-The RAW option on GitHub can return an incorrect Content-Type header which can makes thing goes not the way it supposed to be.  
-* GitHack : https://raw.githack.com/   
-* GitCDN : http://gitcdn.link/    
-* RawGit : http://rawgit.com/   
 
-The full code :  
+###  Content-Type Header Errors
+The RAW option on GitHub can return an incorrect Content-Type header which makes the code not load at all.  
+To solve this, we need an external service which adds the correct type, like jsDelivr.
+
+The full code, using jsDelivr:
 
 ```
 <script type="text/javascript">  
@@ -36,5 +39,5 @@ The full code :
     }  
 
 </script>  
-<script src="https://rawgit.com/VPTOfficial/VistaPanel-Customizations/master/tutorial-link-changer/tutorial-link-changer.js" type="text/javascript"></script>  
+<script src="https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/tutorial-link-changer/tutorial-link-changer.js" type="text/javascript"></script>  
 ```

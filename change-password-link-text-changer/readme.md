@@ -1,25 +1,35 @@
 # "Change Password" Link and Text Changer
 
-Where to put?  
-In the footer advert area of vPanel  
+## What does it do?  
+Basically, it does what the title says!  
+It changes the link and text of the "Change Password" button, allowing you to add your own function there.
 
-### NOTE : USE GITHACK OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.  
-The RAW option on GitHub can return an incorrect Content-Type header which can makes thing goes not the way it supposed to be.  
-* GitHack : https://raw.githack.com/   
-* GitCDN : http://gitcdn.link/    
-* RawGit : http://rawgit.com/   
+## Where should I put it?  
+Put it in the Footer Advert Area (Recommended)  
 
-Installation :   
+## How can I install it?  
 
-Put the following code in the Fotter Advert Area (Recommended) of your hosting vPanel from MyOwnFreeHost admin area and replace `https://vpthemes.win` with your website url and replace `VPThemes` with any Name or text.
-`var change_password_link = "your_website_url"` will replace the `Change Password` url in vPanel and `var change_password_text = "Your_Text"` will replace the `Change Password` text from `Change Password` to whatever you enter as text at the place of `Your_Text`
+Put the following code in the Footer Advert Area from MyOwnFreeHost admin panel.  
+
+Before you do that, make sure to replace `your_website_url` in the code with your website URL and replace `your_text` with the text you want to be shown there.  
+
+The `var change_language_link = "your_website_url"` variable will replace the "Change Password" URL from vPanel and the `var change_language_text = "your_text"` variable will replace the "Change Password" text with whatever you enter as text.
+
+### Content-Type Errors
+The RAW option on GitHub can return an incorrect Content-Type header which makes the code not load at all.  
+To solve this, we need an external service which adds the correct type, like jsDelivr.
+
+The full code, using jsDelivr:
 
 ```
 <script type="text/javascript">  
-    var change_password_link = "https://vpthemes.win",
-	change_password_text = "VPThemes";
+    var change_password_link = "your_website_url",
+	change_password_text = "your_text";
 </script>  
-<script src="https://rawgit.com/VPTOfficial/VistaPanel-Customizations/master/change-password-link-text-changer/change-password-link-text-changer.js" type="text/javascript"></script>  
+<script src="https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/change-password-link-text-changer/change-password-link-text-changer.js" type="text/javascript"></script>  
 ```
 
-### NOTE: YOU ARE NOT ALLOWED TO REMOVE CREDITS FROM JS FILE. YOU CAN REQUEST CREDIT REMOVAL AT OUR SUPPORT FORUMS https://vpthemes.win
+## Can I remove credits?
+No. The license mentions it.  
+
+You can request credit removal at our [support forums](https://vpthemes.win) or on our [Discord Server](https://discord.gg/FTyFXsU).

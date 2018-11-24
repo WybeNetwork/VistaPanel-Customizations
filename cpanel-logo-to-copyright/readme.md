@@ -1,15 +1,19 @@
 # cPanel Logo to Copyright
 
-Where to put?  
-Anywhere  
+## What does it do?  
+It changes the cPanel logo at the footer to your company logo.
 
-Installation :   
-Create a script tag with src pointing to cpanel-logo-to-copyright.js or cpanel-logo-to-copyright.min.js for minified version and place it on the footer ads (Recommended).  
+## Where should I put it?  
+You can put it anywhere, although we recommend to put it on Footer Advert Area.  
 
-Initialization :  
-An object called "b" (lowercase) must be initialized with the following variable  
+## How can I install it?   
+Create a script tag with `src` pointing to `cpanel-logo-to-copyright.js` or `cpanel-logo-to-copyright.min.js` for minified version.
 
-Required variable's :  
+In case you do not know how to do that or are too lazy to do it, we have provided a ready code below.
+
+### How to initialize it?
+An object called "b" (lowercase) must be initialized with the following variables:  
+
     * company_name -> Company Name  
     * company_logo -> Company Logo  
     * company_started -> Year Company Started Exsisting or Publicablly Announced  
@@ -25,13 +29,11 @@ Example :
     }  
     ```
 
-### NOTE : USE GITHACK OR GITCDN TO MAKE SURE THE CONTENT-TYPE HEADER IS SET CORRECTLY.  
-The RAW option on GitHub can return an incorrect Content-Type header which can makes thing goes not the way it supposed to be.  
-* GitHack : https://raw.githack.com/  [DO NOT USE]
-* GitCDN : http://gitcdn.link/  [DO NOT USE]
-* RawGit : http://rawgit.com/ [USE THIS]
+###  Content-Type Header Errors
+The RAW option on GitHub can return an incorrect Content-Type header which makes the code not load at all.  
+To solve this, we need an external service which adds the correct type, like jsDelivr.
 
-The full code :  
+The full code, using jsDelivr:
 
 ```
 <script type="text/javascript">  
@@ -39,10 +41,10 @@ The full code :
     var b = {  
         company_name : "Your company name",  
         company_logo : "Your company logo",  
-        company_started : "What year did your company started?",  
+        company_started : "What year did your company start?",  
         prm_site : "Your Primary site URL (With HTTP:// or HTTPS://)",  
     }  
 
 </script>  
-<script src="https://rawgit.com/VPTOfficial/VistaPanel-Customizations/master/cpanel-logo-to-copyright/cpanel-logo-to-copyright.js" type="text/javascript"></script>  
+<script src="https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/cpanel-logo-to-copyright/cpanel-logo-to-copyright.js" type="text/javascript"></script>  
 ```

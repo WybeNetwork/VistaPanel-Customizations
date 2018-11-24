@@ -14,8 +14,8 @@ You may not modify the credits.
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-Except as contained in this notice, the name(s) of the above copyright holders 
-shall not be used in advertising or otherwise to promote the sale, use or other 
+Except as contained in this notice, the name(s) of the above copyright holders
+shall not be used in advertising or otherwise to promote the sale, use or other
 dealings in this Software without prior written authorization.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -27,5 +27,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 CREDITS TO THE AUTHORS SHALL NOT BE REMOVED WITHOUT WRITTEN AUTHORIZATION BY THE
-AUTHORS THEMSELVES. BY REMOVING THE CREDITS, YOU ARE 
+AUTHORS THEMSELVES. BY REMOVING THE CREDITS, YOU ARE
 NOT ALLOWED TO USE THE SOFTWARE.

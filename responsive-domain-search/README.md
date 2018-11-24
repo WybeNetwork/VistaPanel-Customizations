@@ -10,7 +10,9 @@ Due to [this issue](https://github.com/VPTOfficial/VistaPanel-Customizations/iss
 ## How can I install it?   
 Create a script tag with `src` pointing to `responsive-domain-search.js` or `responsive-domain-search.min.js` for minified version.  
 
-## How to initialize an affiliate code into the search form?   
+In case you do not know how to do that or are too lazy to do it, we have provided a ready code below.
+
+### How to initialize an affiliate code into the search form?   
 A variable "affiliate code" can be defined to put your own affiliate code on the domain search, but, according to iFastNet, this will not give you any money.  
 
 Variable:   
@@ -19,7 +21,7 @@ Variable:
 **If the variable is not declared, an affiliate code for my account (PlanetCloud) will be used.**  
 **In case this method does actually pay money, the money will go into my account and I will appreciate it as a donation :)**  
 
-##  Content-Type Header Errors
+###  Content-Type Header Errors
 The RAW option on GitHub can return an incorrect Content-Type header which makes the code not load at all.  
 To solve this, we need an external service which adds the correct type, like jsDelivr.
 
