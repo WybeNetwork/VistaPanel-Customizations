@@ -1,19 +1,21 @@
 # VistaPanel Customizations
-#### A repository filled with JS and CSS scripts for customizing VistaPanel.
+#### A repository filled with JS and CSS scripts for customizing VistaPanel.  
 
-You **MUST** read and follow the LICENSE file before using any of the code here.
+You **MUST** read and follow the LICENSE file before using any of the scripts here.  
 Developed by VPT for the MOFH community.
 
-Everything here is **FREE** as long as you followed the LICENSE.
+Everything here is **FREE** as long as you follow the LICENSE.
 
-Request permission to remove credits from our scripts here: https://discord.gg/FTyFXsU
+Request permission to remove credits from our scripts on our [Discord Server](https://discord.gg/FTyFXsU).
 
-# Important
+# Is something not working?
 Please check the issues tab to see what's currently buggy or not working.
 
-# Usage
-Go to each script's folder and find the script you want to use. There will be instructions (.md) in each script's folder.
-  
+If you find an issue and want to fix it, submit a PR and we will check it. If it helps, we will merge it.
+
+# How to use the scripts provided here?
+Go to each script's folder and find the script you want to use. There will be instructions on how to do so.
+
 Read the instructions file first, after understanding it go ahead and
-use RawGit with the method described in the article
+use jsDelivr with the method described in the article
 or download the file and upload it to your site or to a CDN.
