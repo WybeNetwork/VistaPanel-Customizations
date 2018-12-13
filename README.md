@@ -6,7 +6,7 @@ Developed by VPT for the MOFH community.
 
 Everything here is **FREE** as long as you follow the LICENSE.
 
-Request permission to remove credits from our scripts on our [Discord Server](https://discord.gg/FTyFXsU).
+Request permission to remove credits from our scripts on our [Discord Server](https://discord.gg/VsEm25e).
 
 # Is something not working?
 Please check the issues tab to see what's currently buggy or not working.
