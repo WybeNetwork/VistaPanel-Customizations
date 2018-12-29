@@ -36,3 +36,5 @@ Add this code in Right Side Bar
   Yeah use in Right Side Bar or Footer not header please. You can also host ```https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/theme-switcher/switcher.js``` on your server 2 find in repo!
   ## I need Customization in Drop Down Menu
   Do yourself! or wait for me.
+  
+  Looking for 2 more steps? Any one is enough.
