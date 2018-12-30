@@ -1,16 +1,15 @@
 # Theme Switcher
 
 ## What does it do?
-Read Title Again! Now You know what it do. It will add an option in VistaPanel so user can switch Themes desgined by VPTOfficial.
+Read Title Again! Now You know what it does. It will add an option in VistaPanel so user can switch Themes desgined by VPTOfficial.
 
 ## Where should I put it?
-On Space, or even on Mars will work. I think you should put it on the Right Side bar.
+On Space, or even on Mars will work. But I think you should put it on the Right Side bar.
 
 ## How can I install (use) it?
-It is not an application to install... But to use it, you can do that in 3 easy steps.
-Add this code in Right Side Bar
-  ```
-  <link rel="stylesheet" type="text/css" href="https://cdn.vptofficial.me/light-lite/styles.css" title="lightlite" />
+It is not an application to install... But to use it, you can do that by adding this code in Right Side Bar
+```
+<link rel="stylesheet" type="text/css" href="https://cdn.vptofficial.me/light-lite/styles.css" title="lightlite" />
 <link rel="stylesheet" type="text/css" href="https://cdn.vptofficial.me/gradient-blue-lite/styles.css" title="gradientbluelite" />
 <link rel="stylesheet" type="text/css" href="https://cdn.vptofficial.me/dark-lite/styles.css" title="draklight" />
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/theme-switcher/switcher.js"></script>
@@ -28,13 +27,10 @@ Add this code in Right Side Bar
 <a href="#" onclick="setActiveStyleSheet('draklight'); return false;">Dark Light</a>
 </li>
 </ul>
-
-  ```
+ ```
   Above is just a demo. You can add more Themes as much as you wish.
   
   ## Final notes
-  Please put in the Right Side Bar or Footer not header. You can also host ```https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/theme-switcher/switcher.js``` on your server!
+  You can also host ```https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/theme-switcher/switcher.js``` on your server!
   ## I need Customization in Drop Down Menu
   Do yourself! or wait for me.
-  
-  Looking for 2 more steps? Any one is enough.
