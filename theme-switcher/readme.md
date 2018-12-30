@@ -1,13 +1,13 @@
 # Theme Switcher
 
 ## What does it do?
-Read Title Again! Now You know what it do. Okay, add option in VistaPanel so user can switch Themes Desgined by VPTOfficial.
+Read Title Again! Now You know what it do. It will add an option in VistaPanel so user can switch Themes desgined by VPTOfficial.
 
 ## Where should I put it?
-On Space, or even on Mars will work. I think Right Side Bar.
+On Space, or even on Mars will work. I think you should put it on the Right Side bar.
 
-## How can I install it?
-It is not an appliation to install anyway you can do that in 3 Steps.
+## How can I install (use) it?
+It is not an application to install... But to use it, you can do that in 3 easy steps.
 Add this code in Right Side Bar
   ```
   <link rel="stylesheet" type="text/css" href="https://cdn.vptofficial.me/light-lite/styles.css" title="lightlite" />
@@ -30,10 +30,10 @@ Add this code in Right Side Bar
 </ul>
 
   ```
-  Above is Just Demo you can add more Themes as mush as you wish.
+  Above is just a demo. You can add more Themes as much as you wish.
   
-  ## Any Last Wish
-  Yeah use in Right Side Bar or Footer not header please. You can also host ```https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/theme-switcher/switcher.js``` on your server 2 find in repo!
+  ## Final notes
+  Please put in the Right Side Bar or Footer not header. You can also host ```https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/theme-switcher/switcher.js``` on your server!
   ## I need Customization in Drop Down Menu
   Do yourself! or wait for me.
   
