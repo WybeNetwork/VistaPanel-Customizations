@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if ("undefined" == typeof a) var a = "25147";
     (function(b, a) {
         for (var c = 0; c < b.length; c++) a(b[c])
-    })(document.querySelectorAll('form[action^="https://ifastnet.com/portal/domainchecker.php'), function(b) {
+    })(document.querySelectorAll('form[action^="https://ifastnet.com/portal/domainchecker.php"]'), function(b) {
         widget = b.parentElement;
         form = document.createElement("form");
         form.setAttribute("class", "form-inline");
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     /* 
      *  Created at 10 July 2018 by PlanetCloud.
-     *  Last modified at 02 November 2018 by PlanetCloud.
+     *  Last modified at 16 March 2019 by Dog2puppy.
      *  DO NOT REMOVE CREDITS!
      *  Created for: VPT (VistaPanel Team).
      */
