@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    if ("undefined" == typeof a) var a = "25147";
+    if ("undefined" == typeof affCode) var affCode = "25147";
     (function(b, a) {
         for (var c = 0; c < b.length; c++) a(b[c])
     })(document.querySelectorAll('form[action^="https://ifastnet.com/portal/domainchecker.php"]'), function(b) {
@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
         form = document.createElement("form");
         form.setAttribute("class", "form-inline");
         form.setAttribute("target", "_blank");
-        form.setAttribute("action", "https://ifastnet.com/portal/domainchecker.php?aff=" + a);
+        form.setAttribute("action", "https://ifastnet.com/portal/domainchecker.php?aff=" + affCode);
         form.setAttribute("method", "post");
-        form.innerHTML = '<input type="hidden" name="direct" value="true"><input type="hidden" name="aff" value="' + a + '"><div class="form-group" style="margin: 20px; 10px;"><input type="text" class="form-control" name="domain" size="54"></div><div class="form-group" style="margin: 20px; 10px;"><select name="ext" class="form-control"><option>.com</option><option>.net</option><option>.org</option><option>.info</option><option>.cc</option><option>.co.uk</option><option>.biz</option><option>.bz</option><option>.eu</option><option>.mobi</option><option>.us</option><option>.name</option></select></div><button class="btn btn-info">Check Now</button>';
+        form.innerHTML = '<input type="hidden" name="direct" value="true"><input type="hidden" name="aff" value="' + affCode + '"><div class="form-group" style="margin: 20px; 10px;"><input type="text" class="form-control" name="domain" size="54"></div><div class="form-group" style="margin: 20px; 10px;"><select name="ext" class="form-control"><option>.com</option><option>.net</option><option>.org</option><option>.info</option><option>.cc</option><option>.co.uk</option><option>.biz</option><option>.bz</option><option>.eu</option><option>.mobi</option><option>.us</option><option>.name</option></select></div><button class="btn btn-info">Check Now</button>';
         col = document.createElement("div");
         col.setAttribute("class", "col-sm-12");
         col.appendChild(form);
