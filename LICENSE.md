@@ -1,6 +1,6 @@
 MIT ATTRIBUTION License
 
-Copyright (c) 2018 VPT
+Copyright (c) 2019 VPT
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
