@@ -2,11 +2,11 @@
 #### A repository filled with JS and CSS scripts for customizing VistaPanel.  
 
 You **MUST** read and follow the LICENSE file before using any of the scripts here.  
-Developed by VPT for the MOFH community.
+Developed by Wybe Network for the MOFH community.
 
-Everything here is **FREE** as long as you follow the LICENSE.
+Everything here is **FREE** as long as you follow the [LICENSE](LICENSE.md).
 
-Request permission to remove credits from our scripts on our [Discord Server](https://discord.gg/VsEm25e).
+Request permission to remove credits from our scripts on our [Discord Server](https://discord.gg/TCspBav).
 
 # Is something not working?
 Please check the issues tab to see what's currently buggy or not working.
@@ -19,3 +19,6 @@ Go to each script's folder and find the script you want to use. There will be in
 Read the instructions file first, after understanding it go ahead and
 use jsDelivr with the method described in the article
 or download the file and upload it to your site or to a CDN.
+
+# Copyright Info
+Copyright 2019 VPT. All Rights Reserved, check the [LICENSE](LICENSE.md) for more details.
