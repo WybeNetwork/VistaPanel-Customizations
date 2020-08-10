@@ -8,7 +8,8 @@
 	*   Github Project URL: https://github.com/VPTOfficial/VistaPanel-Customizations
 	*   Official Website URL: https://vpthemes.win
 	*   This file is licensed under MIT Attribution
+	*   Last Updated on 8th August 2020 by MAHOfficial
 	*
 	************************************************************************** */
-document.getElementById("lnkUserPrefChangeLang").setAttribute("href", change_language_link);
-document.getElementById("lnkUserPrefChangeLang").innerHTML=change_language_text;
+document.getElementById("item_change_language").setAttribute("href", change_language_link);
+document.getElementById("item_change_language").innerHTML=change_language_text;
