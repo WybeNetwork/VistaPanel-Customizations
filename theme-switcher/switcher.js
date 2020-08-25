@@ -62,3 +62,8 @@ window.onunload = function(e) {
 var cookie = readCookie("style");
 var title = cookie ? cookie : getPreferredStyleSheet();
 setActiveStyleSheet(title);
+  /* 
+     *	Created at 29 December 2018 by RanaKHAS
+     *	Modified at 25 August 2018 by RanaKHAS
+     *	DO NOT REMOVE CREDITS!
+     */
