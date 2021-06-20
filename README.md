@@ -20,5 +20,11 @@ Read the instructions file first, after understanding it go ahead and
 use jsDelivr with the method described in the article
 or download the file and upload it to your site or to a CDN.
 
+You can also make use of our cdn at https://vpc.cdn.wybenetwork.com/ {scriptname}/{scriptfilename.js}
+
+# Documentation
+
+You can find the documentation for VistaPanel customizations at https://docs.wybenetwork.com/
+
 # Copyright Info
 Copyright 2019 VPT. All Rights Reserved, check the [LICENSE](LICENSE.md) for more details.
