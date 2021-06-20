@@ -9,10 +9,10 @@ On Space, or even on Mars will work. But I think you should put it on the Right 
 ## How can I install (use) it?
 It is not an application to install... But to use it, you can do that by adding this code in Right Side Bar
 ```
-<link rel="stylesheet" type="text/css" href="https://cdn.vptofficial.me/light-lite/styles.css" title="lightlite" />
-<link rel="stylesheet" type="text/css" href="https://cdn.vptofficial.me/gradient-blue-lite/styles.css" title="gradientbluelite" />
-<link rel="stylesheet" type="text/css" href="https://cdn.vptofficial.me/dark-lite/styles.css" title="draklight" />
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/theme-switcher/switcher.js"></script>
+<link rel="stylesheet" type="text/css" href="https://vpt.cdn.wybenetwork.com/light-lite/styles.css" title="lightlite" />
+<link rel="stylesheet" type="text/css" href="https://vpt.cdn.wybenetwork.com/gradient-blue-lite/styles.css" title="gradientbluelite" />
+<link rel="stylesheet" type="text/css" href="https://vpt.cdn.wybenetwork.com/dark-lite/styles.css" title="draklight" />
+<script type="text/javascript" src="https://vpc.cdn.wybenetwork.com/theme-switcher/switcher.js"></script>
 <button data-toggle="dropdown" class="btn dropdown-toggle user-preferences-btn">
 <span>Theme Options</span>
 </button>
