@@ -6,7 +6,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://zealous-neumann-f60244.netlify.app/theme-switcher/theme-switcher.css';
+    link.href = 'https://vpc.cdn.wybenetwork.com/theme-switcher/theme-switcher.css';
     head.appendChild(link);
 }
 
