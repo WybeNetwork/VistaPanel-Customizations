@@ -1,3 +1,15 @@
+var cssId = 'wybe-network-theme-switcher';
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://vpc.cdn.wybenetwork.com/theme-switcher/theme-switcher.css';
+    head.appendChild(link);
+}
+
 function setActiveStyleSheet(title) {
   var i, a, main;
   for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
@@ -64,6 +76,6 @@ var title = cookie ? cookie : getPreferredStyleSheet();
 setActiveStyleSheet(title);
   /* 
      *	Created at 29 December 2018 by RanaKHAS
-     *	Modified at 25 August 2018 by RanaKHAS
+     *	Modified at 23 June 2021 by MAHOfficial
      *	DO NOT REMOVE CREDITS!
      */
