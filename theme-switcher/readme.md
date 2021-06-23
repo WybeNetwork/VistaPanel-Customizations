@@ -23,7 +23,7 @@ It is not an application to install... But to use it, you can do that by adding 
   <div class="wn-ts-dropup-content">
     <a href="#" onclick="setActiveStyleSheet('lightlite'); return false;">Light Lite</a>
     <a href="#" onclick="setActiveStyleSheet('gradientbluelite'); return false;">Gradient Blue Lite</a>
-    <a href="#" onclick="setActiveStyleSheet('draklight'); return false;">Dark Lite</a>
+    <a href="#" onclick="setActiveStyleSheet('draklite'); return false;">Dark Lite</a>
   </div>
 </div>
 ```
