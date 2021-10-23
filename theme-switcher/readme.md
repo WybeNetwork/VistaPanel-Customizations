@@ -1,8 +1,8 @@
 # Theme Switcher
 
 ## What is going on? Why does my dropdown not work?
-While the script is complete, its state is not, as there are some issues with how we recommended its implementation.  
-The README will be updated soon to reflect the new changes. The dropdown should work in all pages now, although to change the theme you will need to be at the main page. We're currently looking to see if that can change.
+~~While the script is complete, its state is not, as there are some issues with how we recommended its implementation.  
+The README will be updated soon to reflect the new changes. The dropdown should work in all pages now, although to change the theme you will need to be at the main page. We're currently looking to see if that can change.~~ This issue is fixed! :heavy_check_mark:
 
 ## What does it do?
 It will add an option in VistaPanel so user can switch Themes desgined by Wybe Network (Previously VPTOfficial).
@@ -29,8 +29,5 @@ It is not an application to install... But to use it, you can do that by adding 
 ```
   Above is just a demo. You can add more Themes as much as you wish.
   
-  ## Final notes
-  You can also host the script on your server!
-
-  ## I need Customization in Drop Down Menu
-  Do yourself! or wait for me.
+## Final notes
+You can also host the script on your server!
