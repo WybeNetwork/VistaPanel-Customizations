@@ -8,7 +8,7 @@ Put it in Header Advert Area (IMPORTANT)
 Due to [this issue](https://github.com/VPTOfficial/VistaPanel-Customizations/issues/4) reported by [MAHOfficial](https://github.com/mahofficial), the code doesn't seem to run if you put it elsewhere. Thanks for reporting it.  
 
 ## How can I install it?   
-Create a script tag with `src` pointing to `responsive-domain-search.js` or `responsive-domain-search.min.js` for minified version.  
+Create a script tag with `src` pointing to `responsive-domain-search.js` ~~or `responsive-domain-search.min.js` for minified version~~ (currently not available, use the beautified version).  
 
 In case you do not know how to do that or are too lazy to do it, we have provided a ready code below.
 
@@ -26,19 +26,29 @@ The RAW option on GitHub can return an incorrect Content-Type header which makes
 To solve this, we need an external service which adds the correct type, like jsDelivr.
 
 The full code, using jsDelivr:
-
 ```
 <script type="text/javascript">
 	/* OPTIONAL
-	var affCode = 'AFFLIATE_CODE_HERE';
+	 affCode = "AFFILIATE_CODE_HERE";
 	*/
 </script>
-<script src="https://cdn.jsdelivr.net/gh/VPTOfficial/VistaPanel-Customizations/responsive-domain-search/responsive-domain-search.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations/responsive-domain-search/responsive-domain-search.js" type="text/javascript"></script>
 ```
+Alternatively, you can use our CDN:
+```
+<script type="text/javascript">
+	/* OPTIONAL
+	 affCode = "AFFILIATE_CODE_HERE";
+	*/
+</script>
+<script src="https://vpc.cdn.wybenetwork.com/responsive-domain-search/responsive-domain-search.js" type="text/javascript"></script>
+```
+Do not forget to remove the comment lines symbols (``/* OPTIONAL``and ``*/``) if you want your affiliate code to work.
 ## Changelog
-* Created on 10 July 2018 by [PlanetCloud](https://github.com/PlanetGamingGG)  
+* Created on 10 July 2018 by [PlanetCloud](https://github.com/PlanetTheCloud)  
 * Modified at 27 July 2018 by Christine (Cyrl)  
-* Modified at 25 August 2018 by [PCTipsGR](https://github.com/PCTipsGR)  
-* Modified on 28th September 2018 by [MAHOfficial](https://github.com/mahofficial) and [PCTipsGR](https://github.com/PCTipsGR)  
-* Modified on 30th September 2018 by [PlanetCloud](https://github.com/PlanetGamingGG)    
-* Last Modified on 22th November 2018 by [PCTipsGR](https://github.com/PCTipsGR)
+* Modified at 25 August 2018 by [Anyx](https://github.com/4yx)
+* Modified on 28th September 2018 by [MAHOfficial](https://github.com/mahofficial) and [Anyx](https://github.com/4yx)
+* Modified on 30th September 2018 by [PlanetCloud](https://github.com/PlanetTheCloud)  
+* Modified on 22th November 2018 by [Anyx](https://github.com/4yx)
+* Last modified on 06th August 2022 by [Anyx](https://github.com/4yx)

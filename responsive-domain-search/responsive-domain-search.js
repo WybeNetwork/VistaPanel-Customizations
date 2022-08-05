@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    if ("undefined" == typeof affCode) var affCode = "25147";
+    if ("undefined" == typeof affCode) affCode = "25147";
     (function(b, a) {
         for (var c = 0; c < b.length; c++) a(b[c])
     })(document.querySelectorAll('form[action^="https://ifastnet.com/portal/domainchecker.php"]'), function(b) {
@@ -23,8 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
     /* 
      *  Created at 10 July 2018 by PlanetCloud.
      *  Modified at 02 November 2018 by PlanetCloud.
-     *  Last modified at 16 March 2019 by Dog2puppy.
+     *  Modified at 16 March 2019 by Dog2puppy.
+     *  Last modified at 06 August 2022 by Anyx.
      *  DO NOT REMOVE CREDITS!
-     *  Created for: VPT (VistaPanel Team).
+     *  Created for: VPT (VistaPanel Team), moved to Wybe Network.
      */
 });
