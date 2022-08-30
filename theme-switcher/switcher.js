@@ -1,3 +1,8 @@
+/* 
+*	Created at 29 December 2018 by RanaKHAS
+*	Modified at 23 June 2021 by MAHOfficial
+*	DO NOT REMOVE CREDITS!
+*/
 var cssId = 'wybe-network-theme-switcher';
 if (!document.getElementById(cssId))
 {
@@ -74,8 +79,3 @@ window.onunload = function(e) {
 var cookie = readCookie("style");
 var title = cookie ? cookie : getPreferredStyleSheet();
 setActiveStyleSheet(title);
-  /* 
-     *	Created at 29 December 2018 by RanaKHAS
-     *	Modified at 23 June 2021 by MAHOfficial
-     *	DO NOT REMOVE CREDITS!
-     */

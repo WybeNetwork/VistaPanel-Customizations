@@ -14,14 +14,14 @@ In case you do not know how to do that or prefer to use a ready code, we have pr
 
 ###  Content-Type Header Errors
 The RAW option on GitHub can return an incorrect Content-Type header which makes the code not load at all.  
-To solve this, we need an external service which adds the correct type, like jsDelivr.
+To solve this, we need an external service which adds the correct type, like jsDelivr, or our CDN.
 
 The full code, using jsDelivr:
-```
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@master/dropdown-bug-fix/dropdown-bug-fix.js" type="text/javascript"></script>
+```html
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.0/dropdown-bug-fix/dropdown-bug-fix.js" type="text/javascript"></script>
 ```
 Alternatively, you can use our CDN:
-```
+```html
 <script src="https://vpc.cdn.wybenetwork.com/dropdown-bug-fix/dropdown-bug-fix.js" type="text/javascript"></script>
 ```
 ## Changelog

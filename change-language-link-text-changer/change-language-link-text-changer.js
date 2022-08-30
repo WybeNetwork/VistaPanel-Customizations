@@ -1,16 +1,17 @@
-/* 	**************************************************************************
-    	*
+/*  **************************************************************************
+    *
 	*   VistaPanel Add-on
 	*   Script Name: "Change Password" Link and Text Changer
-	*   Author: MAHOfficial & VPT (VistaPanel Team)
-	*   Author URL: https://mahofficial.win
+	*   Author: MAHOfficial & Wybe Network
+	*   Author URL: https://mahofficial.wybenetwork.com
 	*   Version: 1.0
-	*   Github Project URL: https://github.com/VPTOfficial/VistaPanel-Customizations
-	*   Official Website URL: https://vpthemes.win
+	*   GitHub Project URL: https://github.com/WybeNetwork/VistaPanel-Customizations
+	*   Official Website URL: https://wybenetwork.com
 	*   This file is licensed under MIT Attribution
 	*   Last Updated on 8th August 2020 by MAHOfficial
 	*
-	************************************************************************** */
+	************************************************************************** 
+*/
 var t = ["item_", "icon-"];
 for (n=0; n<=1; n++)
 {

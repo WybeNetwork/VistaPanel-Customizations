@@ -4,11 +4,11 @@
 It makes the VistaPanel search form responsive, so that it does not break the vP theme(s).
 
 ## Where should I put it?  
-Put it in Header Advert Area (IMPORTANT)  
-Due to [this issue](https://github.com/VPTOfficial/VistaPanel-Customizations/issues/4) reported by [MAHOfficial](https://github.com/mahofficial), the code doesn't seem to run if you put it elsewhere. Thanks for reporting it.  
+Put it in the Header Advert Area (IMPORTANT). 
+Due to [this issue](https://github.com/VPTOfficial/VistaPanel-Customizations/issues/4) reported by [MAHOfficial](https://github.com/mahofficial), the code doesn't seem to run properly if you put it elsewhere. Thanks for reporting it.  
 
 ## How can I install it?   
-Create a script tag with `src` pointing to `responsive-domain-search.js` ~~or `responsive-domain-search.min.js` for minified version~~ (currently not available, use the beautified version).  
+Create a script tag with `src` pointing to `responsive-domain-search.js` or `responsive-domain-search.min.js` for the minified version.  
 
 In case you do not know how to do that or are too lazy to do it, we have provided a ready code below.
 
@@ -23,19 +23,19 @@ Variable:
 
 ###  Content-Type Header Errors
 The RAW option on GitHub can return an incorrect Content-Type header which makes the code not load at all.  
-To solve this, we need an external service which adds the correct type, like jsDelivr.
+To solve this, we need an external service which adds the correct type, like jsDelivr, or our CDN.
 
 The full code, using jsDelivr:
-```
+```html
 <script type="text/javascript">
 	/* OPTIONAL
 	 affCode = "AFFILIATE_CODE_HERE";
 	*/
 </script>
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations/responsive-domain-search/responsive-domain-search.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.0/responsive-domain-search/responsive-domain-search.js" type="text/javascript"></script>
 ```
 Alternatively, you can use our CDN:
-```
+```html
 <script type="text/javascript">
 	/* OPTIONAL
 	 affCode = "AFFILIATE_CODE_HERE";

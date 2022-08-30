@@ -1,3 +1,8 @@
+/* 
+*	Created at 10 July 2018 by PlanetCloud
+*	Last modified at 02 November 2018 by PlanetCloud
+*	DO NOT REMOVE CREDITS!
+*/
 document.addEventListener("DOMContentLoaded", function() {
     if ("undefined" !== typeof b) {
         var a = document.getElementById("lnkPoweredByCpanel"),
@@ -11,11 +16,4 @@ document.addEventListener("DOMContentLoaded", function() {
             '" style="display:inline-block; z-index:2147483647; visibility:visible;">';
         d.innerHTML = b.company_started < c ? "\u00a9 " + b.company_started + "-" + c + " " + b.company_name + "." : "\u00a9 " + c + " " + b.company_name + "."
     }
-
-    /* 
-     *	Created at 10 July 2018 by PlanetCloud
-     *	Lase modified at 02 November 2018 by PlanetCloud
-     *	DO NOT REMOVE CREDITS!
-     */
-	
 });

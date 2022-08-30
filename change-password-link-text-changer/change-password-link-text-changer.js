@@ -1,12 +1,12 @@
-/**
- *	Vista Panel Add-on
+/*
+ *	VistaPanel Add-on
  *	Script Name: "Change Password" Link and Text Changer
- *	Author: MAHOfficial & VPT (Vista Panel Themes) Team
- *	Author URL: https://mahofficial.win
+ *	Author: MAHOfficial & Wybe Network
+ *	Author URL: https://mahofficial.wybenetwork.com
  *	Version: 1.0
- *	Github Project URL: https://github.com/VPTOfficial/VistaPanel-Customizations
- *	Official Website URL: https://vpthemes.win
- *	This file is licensed under MIT
+ *	Github Project URL: https://github.com/WybeNetwork/VistaPanel-Customizations
+ *	Official Website URL: https://wybenetwork.com
+ *	This file is licensed under MIT Attribution
  *
  *	Modified at 2 November 2018 by PlanetCloud
  */
