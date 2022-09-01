@@ -37,13 +37,7 @@ The full code, using jsDelivr:
         tutorial : "YOUR TUTORIAL LINK WITH HTTP(S) PROTOCOL",   
     }  
 </script>  
-<script type="text/javascript">
-    URL = "https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.0/tutorial-link-changer/tutorial-link-changer.js?id="+ new Date().getTime()
-    script = document.createElement('script')
-    script.setAttribute('type', 'text/javascript')
-    script.setAttribute('src', URL)
-    document.head.appendChild(script)
-</script>  
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.1/tutorial-link-changer/tutorial-link-changer.js" type="text/javascript"></script> 
 ```
 Alternatively, you can use our CDN:
 ```html
@@ -52,15 +46,10 @@ Alternatively, you can use our CDN:
         tutorial : "YOUR TUTORIAL LINK WITH HTTP(S) PROTOCOL",   
     }  
 </script>  
-<script type="text/javascript">
-    URL = "https://vpc.cdn.wybenetwork.com/tutorial-link-changer/tutorial-link-changer.js?id="+ new Date().getTime()
-    script = document.createElement('script')
-    script.setAttribute('type', 'text/javascript')
-    script.setAttribute('src', URL)
-    document.head.appendChild(script)
-</script>  
+<script src="https://vpc.cdn.wybenetwork.com/tutorial-link-changer/tutorial-link-changer.js" type="text/javascript"></script> 
 ```
 ## Changelog
 * Created on 2 September 2018 by [PlanetCloud](https://github.com/PlanetTheCloud)  
 * Modified on 6 August 2020 by [PlanetCloud](https://github.com/PlanetTheCloud) 
-* Last modified on 30 August 2022 by [Anyx](https://github.com/4yx)
+* Modified on 30 August 2022 by [Anyx](https://github.com/4yx)
+* Last modified on 02 September 2022 by [Anyx](https://github.com/4yx)
