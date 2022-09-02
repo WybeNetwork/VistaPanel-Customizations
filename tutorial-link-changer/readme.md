@@ -37,7 +37,7 @@ The full code, using jsDelivr:
         tutorial : "YOUR TUTORIAL LINK WITH HTTP(S) PROTOCOL",   
     }  
 </script>  
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.1/tutorial-link-changer/tutorial-link-changer.js" type="text/javascript"></script> 
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.2/tutorial-link-changer/tutorial-link-changer.js" type="text/javascript"></script> 
 ```
 Alternatively, you can use our CDN:
 ```html

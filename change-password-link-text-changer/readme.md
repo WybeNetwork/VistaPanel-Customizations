@@ -26,7 +26,7 @@ The full code, using jsDelivr:
     var change_password_link = "your_website_url",
     change_password_text = "your_text";
 </script>  
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.1/change-password-link-text-changer/change-password-link-text-changer.js" type="text/javascript"></script>  
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.2/change-password-link-text-changer/change-password-link-text-changer.js" type="text/javascript"></script>  
 ```
 Alternatively, you can use our CDN:
 ```html

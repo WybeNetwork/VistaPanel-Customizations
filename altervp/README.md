@@ -32,7 +32,7 @@ const AlterVP = {
     }
 };
 ```
-Replace the values inside with the ones you want for your panel.
+Replace the values inside with the ones you want for your panel. You can comment out the lines of the features you do not wish to use.
 
 Afterwards, create a script tag with `src` pointing to `altervp.js` or `altervp.min.js` for the minified version.
 
@@ -57,7 +57,7 @@ const AlterVP = {
     }
 };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.1/altervp/altervp.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.2/altervp/altervp.js" type="text/javascript"></script>
 ```
 Alternatively, you can use our CDN:
 ```html
@@ -83,3 +83,4 @@ Feel free to remove the comment line symbol (``//``) that explains the type of t
 * Modified on 14 September 2018 by [woxly](https://github.com/woxly) 
 * Lost in time
 * Recreated on 30 August 2022 by [Anyx](https://github.com/4yx)
+* Last modified on 3 September 2022 by [Anyx](https://github.com/4yx)
