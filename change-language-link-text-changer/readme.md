@@ -27,7 +27,7 @@ The full code, using jsDelivr:
     var change_language_link = "your_website_url",
     change_language_text = "your_text";
 </script>  
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.2/change-language-link-text-changer/change-language-link-text-changer.js" type="text/javascript"></script>  
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.3/change-language-link-text-changer/change-language-link-text-changer.js" type="text/javascript"></script>  
 ```
 Alternatively, you can use our CDN:
 ```html

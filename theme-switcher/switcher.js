@@ -1,7 +1,8 @@
-/* 
-*	Created at 29 December 2018 by RanaKHAS
-*	Modified at 23 June 2021 by MAHOfficial
-*	DO NOT REMOVE CREDITS!
+/* @preserve
+*  Created at 29 December 2018 by RanaKHAS
+*  Modified at 23 June 2021 by AADev
+*  DO NOT REMOVE CREDITS!
+*  Created for: Wybe Network.
 */
 var cssId = 'wybe-network-theme-switcher';
 if (!document.getElementById(cssId))

@@ -18,7 +18,7 @@ To solve this, we need an external service which adds the correct type, like jsD
 
 The full code, using jsDelivr:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.2/dropdown-bug-fix/dropdown-bug-fix.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.3/dropdown-bug-fix/dropdown-bug-fix.js" type="text/javascript"></script>
 ```
 Alternatively, you can use our CDN:
 ```html

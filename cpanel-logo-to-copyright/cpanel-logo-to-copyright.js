@@ -1,7 +1,8 @@
-/* 
+/*  @preserve
 *	Created at 10 July 2018 by PlanetCloud
 *	Last modified at 02 November 2018 by PlanetCloud
 *	DO NOT REMOVE CREDITS!
+*  Created for: Wybe Network.
 */
 document.addEventListener("DOMContentLoaded", function() {
     if ("undefined" !== typeof b) {

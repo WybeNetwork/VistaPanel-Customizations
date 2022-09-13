@@ -1,10 +1,15 @@
-/*
-*  Created on 2 September 2018 by PlanetCloud
-*  Modified on 6 August 2020 by PlanetCloud
-*  Modified on 30 August 2022 by Anyx
-*  Last Modified on 02 September 2022 by Anyx
+/* @preserve
+*  Created on 02 September 2018 by PlanetCloud
+*  Modified on 06 August 2020 by PlanetCloud
+*  Modified on 30 August 2022 and 02 September 2022 by Anyx
+*  Last modified on 13 September 2022 by Anyx
 *  DO NOT REMOVE CREDITS!
+*  Created for: Wybe Network.
 */
-window.addEventListener('load', function() {    
-    PAGE.appGroups[10].items[1].url = b.tutorial;
+PAGE.appGroups.forEach(function(index) { 
+    index.items.forEach(function(element) { 
+        if (element.url == "http://tutorials.securesignup.net/") {
+            element.url = b.tutorial
+        }
+    });
 });

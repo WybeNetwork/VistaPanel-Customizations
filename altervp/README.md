@@ -57,7 +57,7 @@ const AlterVP = {
     }
 };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.2/altervp/altervp.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.3/altervp/altervp.js" type="text/javascript"></script>
 ```
 Alternatively, you can use our CDN:
 ```html
@@ -82,5 +82,5 @@ Feel free to remove the comment line symbol (``//``) that explains the type of t
 * Created on 14 September 2018 by [woxly](https://github.com/woxly)  
 * Modified on 14 September 2018 by [woxly](https://github.com/woxly) 
 * Lost in time
-* Recreated on 30 August 2022 by [Anyx](https://github.com/4yx)
-* Last modified on 3 September 2022 by [Anyx](https://github.com/4yx)
+* Recreated on 30 August and modified on 03 September 2022 by [Anyx](https://github.com/4yx)
+* Last modified on 13 September 2022 by [Anyx](https://github.com/4yx)

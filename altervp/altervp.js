@@ -1,8 +1,9 @@
-/*
+/* @preserve
 *  Created on 14 September 2018 by woxly
-*  Recreated on 30 August 2022 by Anyx
-*  Modified on 3 September 2022 by Anyx
+*  Recreated on 30 August and modified on 03 September 2022 by Anyx
+*  Last modified on 13 September 2022 by Anyx
 *  DO NOT REMOVE CREDITS!
+*  Created for: Wybe Network.
 */
 document.addEventListener("DOMContentLoaded", function() {
     // Title
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (AlterVP.credits.logo !== undefined) {
         script = document.createElement('script')
         script.setAttribute('type', 'text/javascript')
-        script.innerHTML = "window.addEventListener('load',function(){document.getElementById('imgPoweredByCpanel').src=AlterVP.credits.logo,document.getElementById('txtCpanelVersion').innerHTML=AlterVP.credits.desc})"
+        script.innerHTML = "window.addEventListener('load',function(){document.getElementById('imgPoweredByCpanel').src=AlterVP.credits.logo})"
         document.body.appendChild(script)
     }
     if (AlterVP.credits.desc !== undefined) {
