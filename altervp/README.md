@@ -57,7 +57,7 @@ const AlterVP = {
     }
 };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.0.3/altervp/altervp.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.1.0/altervp/altervp.js" type="text/javascript"></script>
 ```
 Alternatively, you can use our CDN:
 ```html
