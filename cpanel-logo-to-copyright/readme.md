@@ -46,7 +46,7 @@ The full code, using jsDelivr:
     }  
 
 </script>  
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.1.0/cpanel-logo-to-copyright/cpanel-logo-to-copyright.js" type="text/javascript"></script>  
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.2.0/cpanel-logo-to-copyright/cpanel-logo-to-copyright.js" type="text/javascript"></script>  
 ```
 Alternatively, you can use our CDN:
 ```html
