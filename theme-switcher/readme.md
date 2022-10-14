@@ -1,4 +1,5 @@
 # Theme Switcher
+> :warning: This documentation is for version 2 of Theme Switcher. If you are still using Theme switcher version 1, then refer to these [Docs](/readme_v1.md)
 
 ## What does it do?
 As the name suggests, it allows you to add no. of themes with an option for your user to switch between different vPanel themes.
@@ -8,6 +9,11 @@ As the name suggests, it allows you to add no. of themes with an option for your
 - Use custom domain or our CDN for themes (Supports Normal, Special & Lite Themes)
 - Display in one of the two places (Footer OR User nav bar)
 - Uses Cookies to keep the user choice saved
+
+## What Normal, Special & Lite Types Mean?
+**Normal themes** in our themes repository have two stylesheets `styles.css` & `icon_spritemap.css`
+
+**Lite & Special themes** have only one file. For **lite themes** the name of file is `styles.css` and for **Special themes** the name of file is `panel.css`
 
 ## How to install?
 First load the script in footer advert area.
@@ -36,49 +42,57 @@ Example Configuration:
 ```javascript
 <script type="text/javascript">
     // object must be created with this name
-    const wnThemeSwitcher = new ThemeSwitcher({
-        // Add theme folder name, name and type
-        'gradient-blue': { // must be folder name
-            title: 'Gradient Blue', // any name you want to show on user end
-            type: 'Normal' // type of theme
-        },
-        'light': {
-            title: 'Light Theme',
-            type: 'Normal'
-        },
-        'lightspace-blue': {
-            title: 'Lightspace Blue',
-            type: 'Special'
-        },
-        }, { // set options for themes
-        baseURL: 'https://example.tld/', // optional, default is https://vpt.cdn.wybenetwork.com/
-        position: 'usernav', // optional, default is bottom (footer area)
-        default: { // optional, use to setup the default theme
-            'dark-discord': 'Normal' // 'theme-dirname': 'type of theme' 
+    const wnThemeSwitcher = new ThemeSwitcher(
+        [
+            // Add theme folder name, name and type
+            {
+                dir: 'gradient-blue', // must be folder name of theme
+                title: 'Gradient Blue', // any name you want to show on user end
+                type: 'normal' // type of theme
+            },
+            {
+                dir: 'light',
+                title: 'Light Theme',
+                type: 'normal'
+            },
+            {
+                dir: 'lightspace-blue',
+                title: 'Lightspace Blue',
+                type: 'special'
+            }
+        ],
+        { // set options for themes
+            baseURL: 'https://example.tld/', // optional, default is https://vpt.cdn.wybenetwork.com/
+            position: 'usernav', // optional, default is bottom (footer area)
+            default: { // optional, use to setup the default theme
+                dir: 'dark-discord', // must be folder name of theme
+                type: 'normal' // type of theme
+            }
         }
-    })
+    )
 </script>
 ```
 
 ## Options
-| Properties  	 | Priority 	 | Values 	                                                                                                     |
-|---------------|------------|--------------------------------------------------------------------------------------------------------------|
-| themeList 	   | required   | {<br/>'theme-dirname': {<br/> title: 'Any Name for Theme'<br/>type: 'Theme Type'<br/>}<br/>}                 |
-| options	      | optional	  | {<br/>baseURL: 'https://example.tld/' <br/>position: 'bottom' <br/> default: {<br/>'theme-dirname': 'type'<br/>}<br/>}	 |                
+| Properties  	 | Priority 	 | Values 	                                                                                                                                                                                                                                                                                                                                    |
+|---------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| themeList 	   | required   | [<br/>&nbsp;&nbsp;&nbsp;&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dir: 'theme-dirname', <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: 'Theme Name',<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: 'theme type'<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>]                                              |
+| options	      | optional	  | {<br/>&nbsp;&nbsp;&nbsp;&nbsp;baseURL: 'https://example.tld/' <br/>&nbsp;&nbsp;&nbsp;&nbsp;position: 'bottom' <br/> &nbsp;&nbsp;&nbsp;&nbsp;default: {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dir: 'theme-dirname'<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: 'theme type'<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>}	 |                
 
 ## Properties
-### themeList `(Object), Required`
+### themeList `(array), Required`
 
 check https://docs.wybenetwork.com/vistapanel-themes/#/themes-name for theme directory names and their types.
 
-#### theme-directory-name `(Object)`
-It can have two properties title & type. 
+#### dir `(Object)`
+Directory name of theme you want to add in theme selector options. 
 
-##### title `(string)`
+#### title `(string)`
 Title can be any name you want to show to user on frontend. 
 
-##### type `(string)`
+#### type `(string)`
 Type must be the type of the theme you are allowing user to choose.
+List of themes categorized into different types can be found at https://docs.wybenetwork.com/vistapanel-themes/#/themes-name
 
 ### options `(Object), Optional`
 These options are optional, if you don't set them then default one will be used.
@@ -94,12 +108,13 @@ By default it is set to `bottom`. You can use this option to change the location
 - `bottom`, if position option is set to this value then theme switcher will be shown in footer area.
 
 #### default `(Object)`
-Only one property should be provided for this object to set the default theme.
+Only two properties should be provided for this object to set the default theme.
 
-##### theme-directory-name `(String)`
+##### dir `(String)`
+Directory name of the theme you want to set as default.
+
+##### type `(String)`
 The value set for this option should be the type of the theme.
-
-In properties `theme-directory-name` or `theme-dirname` should be replaced with the name of the theme directory which you want to set.
 
 ## Changelog
 ```html

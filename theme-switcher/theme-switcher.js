@@ -1,10 +1,8 @@
 /*!
 * Project: Theme Switcher
-* name: theme-switcher.js
 * Version: 2.0.0
 * Description: Allows you to add an option in your MyOwnFreeHost vPanel to allow users to switch to any theme that they want
-* Author: Wybe Network
-* Author URL: https://wybenetwork.com/
+* Author: Wybe Network (https://wybenetwork.com/)
 * Created at: October 14th, 2022
 * Created by: AADev
 * Docs: https://docs.wybenetwork.com/
@@ -19,29 +17,18 @@ class ThemeSwitcher {
     #curTheme = '';
 
     constructor(themeList, args={baseURL:'https://vpt.cdn.wybenetwork.com/', position:'bottom'}) {
-        this.#position = (args.position) ? args.position : 'bottom';
         this.#themeList = themeList;
+        this.#position = (args.position) ? args.position : 'bottom';
         this.#baseURL = (args.baseURL) ? args.baseURL : 'https://vpt.cdn.wybenetwork.com/';
 
         const cookie = document.cookie.match(new RegExp('(^| )wnCurTheme=([^;]+)'));
 
-        if (cookie) {
-            this.#curTheme = cookie[2];
-            this.setActiveStyle(this.#curTheme);
-        } else {
-            if (args.default) {
-                Object.entries(args.default).forEach(([key, val]) => {
-                    this.#curTheme = `${key}___${val}`;
-                    this.setActiveStyle(this.#curTheme);
-                })
-            }
-            this.#curTheme = 'Default';
-        }
+        this.#curTheme = (cookie) ? cookie[2] : (args.default) ? `${args.default.dir}___${args.default.type}` : 'Default';
+        (cookie || args.default) ? this.setActiveStyle(this.#curTheme) : '';
+        this.#curTheme = 'Default';
 
         document.addEventListener('readystatechange', event => {
-            if (event.target.readyState === "complete") {
-                this.insertElement();
-            }
+            if (event.target.readyState === "complete") this.insertElement();
         });
     }
 
@@ -49,12 +36,10 @@ class ThemeSwitcher {
         let el = `<form>` +
             `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.setActiveStyle(value);" name="ext">`;
 
-        if (this.#curTheme === 'Default') {
-            el += `<option value="Default___Normal" disabled selected>Default</option>`;
-        }
+        el += (this.#curTheme === 'Default') ? `<option value="Default___normal" disabled selected>Default</option>` : '';
 
-        Object.entries(this.#themeList).forEach(([key, val]) => {
-            el += `<option value="${key}___${val.type}" ${((key + '___' + val.type) === this.#curTheme) ? 'selected' : ''}>${val.title}</option>`;
+        this.#themeList.forEach((val) => {
+            el += `<option value="${val.dir}___${val.type}" ${((val.dir + '___' + val.type) === this.#curTheme) ? 'selected' : ''}>${val.title}</option>`;
         });
 
         el += `</select>` +
@@ -89,8 +74,8 @@ class ThemeSwitcher {
         newEl.setAttribute('class', 'dropdown-menu dropdown-menu-right');
         newEl.setAttribute('style', 'display: block;');
         let html = '';
-        Object.entries(this.#themeList).forEach(([key, val]) => {
-            html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${key}___${val.type}')">${val.title}</a></li>`;
+        this.#themeList.forEach((val) => {
+            html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}')">${val.title}</a></li>`;
         });
         newEl.innerHTML = html;
         el.parentNode.insertBefore(newEl, el.nextSibling);
@@ -101,12 +86,11 @@ class ThemeSwitcher {
     }
 
     setActiveStyle(value) {
-        const dir = value.split('___')[0];
-        const type = value.split('___')[1];
-        const style = {
-            url: this.#baseURL + dir + '/'
-        };
+        const val = value.split('___');
+        const dir = val[0];
+        const type = val[1];
         const cookie = document.cookie.match(new RegExp('(^| )wnCurTheme=([^;]+)'));
+
         if (cookie) {
             try {
                 document.getElementById(cookie[2]).remove();
@@ -115,22 +99,9 @@ class ThemeSwitcher {
                 console.log(e);
             }
         }
-        let theme;
-        switch(type) {
-            case 'Normal': style.url += 'styles.css';
-                style.icon = this.#baseURL + dir + '/' + 'icon_spritemap.css';
-                theme = `<link id="${value}" rel="stylesheet" type="text/css" href="${style.url}" />` +
-                `<link id="${value}___icon" rel="stylesheet" type="text/css" href="${style.icon}" />`;
-                break;
-            case 'Special': style.url += 'panel.css';
-                theme = `<link id="${value}" rel="stylesheet" type="text/css" href="${style.url}" />`;
-                break;
-            case 'Lite': style.url += 'styles.css';
-                theme = `<link id="${value}" rel="stylesheet" type="text/css" href="${style.url}" />`;
-                break;
-            default: console.log('No Custom Theme Loaded!');
-                break;
-        }
+
+        const theme = `<link id="${value}" rel="stylesheet" type="text/css" href="${this.#baseURL + dir}/${(type === 'special') ? 'panel.css' : 'styles.css'}" />`
+            + `${(type === 'normal') ? `<link id="${value}___icon" rel="stylesheet" type="text/css" href="${this.#baseURL + dir}/icon_spritemap.css" />` : ''}`
         document.head.insertAdjacentHTML('beforeend', theme);
 
         const exp = new Date();
@@ -146,22 +117,3 @@ class ThemeSwitcher {
         }
     }
 }
-
-const wnThemeSwitcher = new ThemeSwitcher({
-    'gradient-blue': {
-        title: 'Gradient Blue',
-        type: 'Normal'
-    },
-    'light': {
-        title: 'Light Theme',
-        type: 'Normal'
-    },
-    'lightspace-blue': {
-        title: 'Lightspace Blue',
-        type: 'Special'
-    },
-}, {
-    default: {
-        'dark-discord': 'Normal'
-    }
-})
