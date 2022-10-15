@@ -19,13 +19,13 @@ class ThemeSwitcher {
 
     constructor(themeList, args) {
         this.#themeList = themeList;
-        this.#position = (args.position) ? args.position : 'bottom';
-        this.#baseURL = (args.baseURL) ? args.baseURL : 'https://vpt.cdn.wybenetwork.com/';
+        this.#position = args.position || 'bottom';
+        this.#baseURL = args.baseURL || 'https://vpt.cdn.wybenetwork.com/';
 
         const cookie = document.cookie.match(new RegExp('(^| )wnCurTheme=([^;]+)'));
 
-        this.#curTheme = (cookie) ? cookie[2] : (args.default) ? `${args.default.dir}___${args.default.type}` : 'Default';
-        (cookie || args.default) ? this.setActiveStyle(this.#curTheme) : '';
+        this.#curTheme = (cookie) ? cookie[2] : (args.default) ? `${args.default.dir}___${args.default.type}` : '';
+        if (this.#curTheme) this.setActiveStyle(this.#curTheme);
         this.#curTheme = 'Default';
 
         document.addEventListener('readystatechange', event => {
