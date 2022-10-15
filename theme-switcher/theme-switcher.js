@@ -76,6 +76,7 @@ class ThemeSwitcher {
         newEl.setAttribute('class', 'dropdown-menu dropdown-menu-right');
         newEl.setAttribute('style', 'display: block;');
         let html = '';
+        html += (this.#defaultThemeName) ? `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${this.#defaultThemeName}');">Default</a></li>` : '';
         this.#themeList.forEach((val) => {
             html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}');">${val.title}</a></li>`;
         });
