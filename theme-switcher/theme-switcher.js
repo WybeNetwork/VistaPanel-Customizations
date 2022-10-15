@@ -26,7 +26,7 @@ class ThemeSwitcher {
 
         const cookie = localStorage.getItem("wnCurTheme");
 
-        this.curTheme = (cookie) ? cookie[2] : 'Default';
+        this.curTheme = cookie ?? 'Default';
         if (cookie || args.default) this.setActiveStyle((args.default && !cookie) ? this.#defaultThemeName : this.curTheme);
 
         document.addEventListener('readystatechange', event => {
@@ -102,8 +102,8 @@ class ThemeSwitcher {
 
         if (cookie) {
             try {
-                document.getElementById(cookie[2]).remove();
-                document.getElementById(cookie[2] + '___icon').remove();
+                document.getElementById(cookie).remove();
+                document.getElementById(cookie + '___icon').remove();
             } catch (e) {
                 console.log(e);
             }
