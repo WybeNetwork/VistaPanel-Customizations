@@ -90,14 +90,6 @@ class ThemeSwitcher {
     }
 
     setActiveStyle(value) {
-        if (value === 'default___normal') {
-            localStorage.removeItem("wnCurTheme");
-            return;
-        }
-
-        const val = value.split('___');
-        const dir = val[0];
-        const type = val[1];
         const cookie = localStorage.getItem("wnCurTheme");
 
         if (cookie) {
@@ -108,6 +100,15 @@ class ThemeSwitcher {
                 console.log(e);
             }
         }
+
+        if (value === 'default___normal') {
+            localStorage.removeItem("wnCurTheme");
+            return;
+        }
+
+        const val = value.split('___');
+        const dir = val[0];
+        const type = val[1];
 
         const theme = `<link id="${value}" rel="stylesheet" type="text/css" href="${this.#baseURL + dir}/${(type === 'special') ? 'panel.css' : 'styles.css'}" />`
             + `${(type === 'normal') ? `<link id="${value}___icon" rel="stylesheet" type="text/css" href="${this.#baseURL + dir}/icon_spritemap.css" />` : ''}`
