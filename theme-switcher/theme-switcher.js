@@ -15,17 +15,19 @@ class ThemeSwitcher {
     #position;
     #baseURL;
     #themeList;
+    #defaultThemeName;
     curTheme = '';
 
     constructor(themeList, args) {
         this.#themeList = themeList;
-        this.#position = args.position || 'bottom';
-        this.#baseURL = args.baseURL || 'https://vpt.cdn.wybenetwork.com/';
+        this.#defaultThemeName = (args.default) ? `${args.default.dir}___${args.default.type}` : null;
+        this.#position = args.position ?? 'bottom';
+        this.#baseURL = args.baseURL ?? 'https://vpt.cdn.wybenetwork.com/';
 
         const cookie = document.cookie.match(new RegExp('(^| )wnCurTheme=([^;]+)'));
 
         this.curTheme = (cookie) ? cookie[2] : 'Default';
-        if (cookie || args.default) this.setActiveStyle((args.default && !cookie) ? `${args.default.dir}___${args.default.type}` : this.curTheme);
+        if (cookie || args.default) this.setActiveStyle((args.default && !cookie) ? this.#defaultThemeName : this.curTheme);
 
         document.addEventListener('readystatechange', event => {
             if (event.target.readyState === "complete") this.insertElement();
@@ -34,9 +36,9 @@ class ThemeSwitcher {
 
     #insertBottom() {
         let el = `<form>` +
-            `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.curTheme = value; wnThemeSwitcher.setActiveStyle(value);" name="ext">`;
+            `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.setActiveStyle(value);" name="ext">`;
 
-        el += (this.curTheme === 'Default') ? `<option value="Default___normal" disabled selected>Default</option>` : '';
+        el += (this.curTheme === 'Default' || this.#defaultThemeName) ? `<option value="${this.#defaultThemeName ?? 'Default___normal'}" ${(this.#defaultThemeName) ? '' : 'disabled'} ${((this.#defaultThemeName === this.curTheme) || (this.curTheme === 'Default')) ? 'selected' : ''}>Default</option>` : '';
 
         this.#themeList.forEach((val) => {
             el += `<option value="${val.dir}___${val.type}" ${((val.dir + '___' + val.type) === this.curTheme) ? 'selected' : ''}>${val.title}</option>`;
@@ -75,14 +77,15 @@ class ThemeSwitcher {
         newEl.setAttribute('style', 'display: block;');
         let html = '';
         this.#themeList.forEach((val) => {
-            html += `<li><a href="#" onclick="wnThemeSwitcher.curTheme = ${val.dir}; wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}');">${val.title}</a></li>`;
+            html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}');">${val.title}</a></li>`;
         });
         newEl.innerHTML = html;
         el.parentNode.insertBefore(newEl, el.nextSibling);
     }
 
     insertElement() {
-        (this.#position === 'bottom') ? this.#insertBottom() : (this.#position === 'usernav') ? this.#insertUserNav() : '';
+        (this.#position === 'bottom') ? this.#insertBottom()
+            : (this.#position === 'usernav') ? this.#insertUserNav() : '';
     }
 
     setActiveStyle(value) {
@@ -106,7 +109,7 @@ class ThemeSwitcher {
 
         const exp = new Date();
         exp.setTime(exp.getTime() + (3650*24*60*60*1000));
-        if (this.curTheme !== 'Default') document.cookie = `wnCurTheme=${value}; expires=${exp}; path=/`;
+        document.cookie = `wnCurTheme=${value}; expires=${exp}; path=/`;
 
         if (this.#position === 'usernav') {
             try {
