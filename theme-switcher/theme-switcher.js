@@ -15,7 +15,7 @@ class ThemeSwitcher {
     #position;
     #baseURL;
     #themeList;
-    #curTheme = '';
+    curTheme = '';
 
     constructor(themeList, args) {
         this.#themeList = themeList;
@@ -24,8 +24,8 @@ class ThemeSwitcher {
 
         const cookie = document.cookie.match(new RegExp('(^| )wnCurTheme=([^;]+)'));
 
-        this.#curTheme = (cookie) ? cookie[2] : 'Default';
-        if (cookie || args.default) this.setActiveStyle((args.default) ? `${args.default.dir}___${args.default.type}` : this.#curTheme);
+        this.curTheme = (cookie) ? cookie[2] : 'Default';
+        if (cookie || args.default) this.setActiveStyle((args.default) ? `${args.default.dir}___${args.default.type}` : this.curTheme);
 
         document.addEventListener('readystatechange', event => {
             if (event.target.readyState === "complete") this.insertElement();
@@ -34,12 +34,12 @@ class ThemeSwitcher {
 
     #insertBottom() {
         let el = `<form>` +
-            `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.setActiveStyle(value); this.#curTheme = value;" name="ext">`;
+            `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.setActiveStyle(value); wnThemeSwitcher.curTheme = value;" name="ext">`;
 
-        el += (this.#curTheme === 'Default') ? `<option value="Default___normal" disabled selected>Default</option>` : '';
+        el += (this.curTheme === 'Default') ? `<option value="Default___normal" disabled selected>Default</option>` : '';
 
         this.#themeList.forEach((val) => {
-            el += `<option value="${val.dir}___${val.type}" ${((val.dir + '___' + val.type) === this.#curTheme) ? 'selected' : ''}>${val.title}</option>`;
+            el += `<option value="${val.dir}___${val.type}" ${((val.dir + '___' + val.type) === this.curTheme) ? 'selected' : ''}>${val.title}</option>`;
         });
 
         el += `</select>` +
@@ -75,7 +75,7 @@ class ThemeSwitcher {
         newEl.setAttribute('style', 'display: block;');
         let html = '';
         this.#themeList.forEach((val) => {
-            html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}'); this.#curTheme = ${val.dir};">${val.title}</a></li>`;
+            html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}'); wnThemeSwitcher.curTheme = ${val.dir};">${val.title}</a></li>`;
         });
         newEl.innerHTML = html;
         el.parentNode.insertBefore(newEl, el.nextSibling);
@@ -106,7 +106,7 @@ class ThemeSwitcher {
 
         const exp = new Date();
         exp.setTime(exp.getTime() + (3650*24*60*60*1000));
-        if (this.#curTheme !== 'Default') document.cookie = `wnCurTheme=${value}; expires=${exp}; path=/`;
+        if (this.curTheme !== 'Default') document.cookie = `wnCurTheme=${value}; expires=${exp}; path=/`;
 
         if (this.#position === 'usernav') {
             try {
