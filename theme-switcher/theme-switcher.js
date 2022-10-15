@@ -101,6 +101,14 @@ class ThemeSwitcher {
             }
         }
 
+        if (this.#position === 'usernav') {
+            try {
+                document.getElementById('wnThemeSwitcherOptions').remove();
+            } catch(e) {
+                console.log(e);
+            }
+        }
+
         if (value === 'default___normal') {
             localStorage.removeItem("wnCurTheme");
             return;
@@ -115,13 +123,5 @@ class ThemeSwitcher {
         document.head.insertAdjacentHTML('beforeend', theme);
 
         localStorage.setItem("wnCurTheme", value);
-
-        if (this.#position === 'usernav') {
-            try {
-                document.getElementById('wnThemeSwitcherOptions').remove();
-            } catch(e) {
-                console.log(e);
-            }
-        }
     }
 }
