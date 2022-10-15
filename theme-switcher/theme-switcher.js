@@ -24,7 +24,7 @@ class ThemeSwitcher {
         this.#position = args.position ?? 'bottom';
         this.#baseURL = args.baseURL ?? 'https://vpt.cdn.wybenetwork.com/';
 
-        const cookie = document.cookie.match(new RegExp('(^| )wnCurTheme=([^;]+)'));
+        const cookie = localStorage.getItem("wnCurTheme");
 
         this.curTheme = (cookie) ? cookie[2] : 'Default';
         if (cookie || args.default) this.setActiveStyle((args.default && !cookie) ? this.#defaultThemeName : this.curTheme);
@@ -38,7 +38,7 @@ class ThemeSwitcher {
         let el = `<form>` +
             `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.setActiveStyle(value);" name="ext">`;
 
-        el += (this.curTheme === 'Default' || this.#defaultThemeName) ? `<option value="${this.#defaultThemeName ?? 'Default___normal'}" ${(this.#defaultThemeName) ? '' : 'disabled'} ${((this.#defaultThemeName === this.curTheme) || (this.curTheme === 'Default')) ? 'selected' : ''}>Default</option>` : '';
+        el += `<option value="${this.#defaultThemeName ?? 'default___normal'}" ${((this.#defaultThemeName === this.curTheme) || (this.curTheme === 'Default')) ? 'selected' : ''}>Default</option>`;
 
         this.#themeList.forEach((val) => {
             el += `<option value="${val.dir}___${val.type}" ${((val.dir + '___' + val.type) === this.curTheme) ? 'selected' : ''}>${val.title}</option>`;
@@ -76,7 +76,7 @@ class ThemeSwitcher {
         newEl.setAttribute('class', 'dropdown-menu dropdown-menu-right');
         newEl.setAttribute('style', 'display: block;');
         let html = '';
-        html += (this.#defaultThemeName) ? `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${this.#defaultThemeName}');">Default</a></li>` : '';
+        html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${this.#defaultThemeName ?? 'default___normal'}');">Default</a></li>`;
         this.#themeList.forEach((val) => {
             html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}');">${val.title}</a></li>`;
         });
@@ -90,10 +90,15 @@ class ThemeSwitcher {
     }
 
     setActiveStyle(value) {
+        if (value === 'default___normal') {
+            localStorage.removeItem("wnCurTheme");
+            return;
+        }
+
         const val = value.split('___');
         const dir = val[0];
         const type = val[1];
-        const cookie = document.cookie.match(new RegExp('(^| )wnCurTheme=([^;]+)'));
+        const cookie = localStorage.getItem("wnCurTheme");
 
         if (cookie) {
             try {
@@ -108,9 +113,7 @@ class ThemeSwitcher {
             + `${(type === 'normal') ? `<link id="${value}___icon" rel="stylesheet" type="text/css" href="${this.#baseURL + dir}/icon_spritemap.css" />` : ''}`
         document.head.insertAdjacentHTML('beforeend', theme);
 
-        const exp = new Date();
-        exp.setTime(exp.getTime() + (3650*24*60*60*1000));
-        document.cookie = `wnCurTheme=${value}; expires=${exp}; path=/`;
+        localStorage.setItem("wnCurTheme", value);
 
         if (this.#position === 'usernav') {
             try {

@@ -118,6 +118,11 @@ The value set for this option should be the type of the theme.
 
 ## Changelog
 ```html
+Version 2.0.3 | October 15th, 2022
+- Bugs Fixes
+- Switched from Cookies to Local Storage
+```
+```html
 Version 2.0.2 | October 15th, 2022
 - Code Optimization (Thanks to PlanetCloud for Suggestions)
 - Bugs Fixes
