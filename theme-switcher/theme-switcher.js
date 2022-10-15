@@ -34,7 +34,7 @@ class ThemeSwitcher {
 
     #insertBottom() {
         let el = `<form>` +
-            `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.setActiveStyle(value);" name="ext">`;
+            `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.setActiveStyle(value); this.#curTheme = value;" name="ext">`;
 
         el += (this.#curTheme === 'Default') ? `<option value="Default___normal" disabled selected>Default</option>` : '';
 
@@ -61,7 +61,7 @@ class ThemeSwitcher {
         const newSub = document.createElement('a');
         newSub.setAttribute('id', 'lnkUserPrefChangePwd');
         newSub.setAttribute('href', '#');
-        newSub.setAttribute('onclick', `wnThemeSwitcher.themeOptions();`);
+        newSub.setAttribute('onclick', `wnThemeSwitcher.themeOptions(); this.#curTheme = value;`);
         newSub.innerHTML = 'Change Theme';
         newEl.appendChild(newSub);
         el.parentNode.insertBefore(newEl, el.nextSibling);
