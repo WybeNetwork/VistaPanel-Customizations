@@ -25,7 +25,7 @@ class ThemeSwitcher {
         const cookie = document.cookie.match(new RegExp('(^| )wnCurTheme=([^;]+)'));
 
         this.curTheme = (cookie) ? cookie[2] : 'Default';
-        if (cookie || args.default) this.setActiveStyle((args.default) ? `${args.default.dir}___${args.default.type}` : this.curTheme);
+        if (cookie || args.default) this.setActiveStyle((args.default && !cookie) ? `${args.default.dir}___${args.default.type}` : this.curTheme);
 
         document.addEventListener('readystatechange', event => {
             if (event.target.readyState === "complete") this.insertElement();
