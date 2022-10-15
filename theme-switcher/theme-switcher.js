@@ -24,9 +24,8 @@ class ThemeSwitcher {
 
         const cookie = document.cookie.match(new RegExp('(^| )wnCurTheme=([^;]+)'));
 
-        this.#curTheme = (cookie) ? cookie[2] : (args.default) ? `${args.default.dir}___${args.default.type}` : '';
-        if (this.#curTheme) this.setActiveStyle(this.#curTheme);
-        this.#curTheme = 'Default';
+        this.#curTheme = (cookie) ? cookie[2] : 'Default';
+        if (cookie || args.default) this.setActiveStyle((args.default) ? `${args.default.dir}___${args.default.type}` : this.#curTheme);
 
         document.addEventListener('readystatechange', event => {
             if (event.target.readyState === "complete") this.insertElement();
@@ -107,7 +106,7 @@ class ThemeSwitcher {
 
         const exp = new Date();
         exp.setTime(exp.getTime() + (3650*24*60*60*1000));
-        document.cookie = `wnCurTheme=${value}; expires=${exp}; path=/`;
+        if (this.#curTheme !== 'Default') document.cookie = `wnCurTheme=${value}; expires=${exp}; path=/`;
 
         if (this.#position === 'usernav') {
             try {
