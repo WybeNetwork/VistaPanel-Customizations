@@ -34,7 +34,7 @@ class ThemeSwitcher {
 
     #insertBottom() {
         let el = `<form>` +
-            `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.setActiveStyle(value); wnThemeSwitcher.curTheme = value;" name="ext">`;
+            `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.curTheme = value; wnThemeSwitcher.setActiveStyle(value);" name="ext">`;
 
         el += (this.curTheme === 'Default') ? `<option value="Default___normal" disabled selected>Default</option>` : '';
 
@@ -75,7 +75,7 @@ class ThemeSwitcher {
         newEl.setAttribute('style', 'display: block;');
         let html = '';
         this.#themeList.forEach((val) => {
-            html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}'); wnThemeSwitcher.curTheme = ${val.dir};">${val.title}</a></li>`;
+            html += `<li><a href="#" onclick="wnThemeSwitcher.curTheme = ${val.dir}; wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}');">${val.title}</a></li>`;
         });
         newEl.innerHTML = html;
         el.parentNode.insertBefore(newEl, el.nextSibling);
