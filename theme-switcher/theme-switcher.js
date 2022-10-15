@@ -61,7 +61,7 @@ class ThemeSwitcher {
         const newSub = document.createElement('a');
         newSub.setAttribute('id', 'lnkUserPrefChangePwd');
         newSub.setAttribute('href', '#');
-        newSub.setAttribute('onclick', `wnThemeSwitcher.themeOptions(); this.#curTheme = value;`);
+        newSub.setAttribute('onclick', `wnThemeSwitcher.themeOptions();`);
         newSub.innerHTML = 'Change Theme';
         newEl.appendChild(newSub);
         el.parentNode.insertBefore(newEl, el.nextSibling);
@@ -75,7 +75,7 @@ class ThemeSwitcher {
         newEl.setAttribute('style', 'display: block;');
         let html = '';
         this.#themeList.forEach((val) => {
-            html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}')">${val.title}</a></li>`;
+            html += `<li><a href="#" onclick="wnThemeSwitcher.setActiveStyle('${val.dir}___${val.type}'); this.#curTheme = ${val.dir};">${val.title}</a></li>`;
         });
         newEl.innerHTML = html;
         el.parentNode.insertBefore(newEl, el.nextSibling);
