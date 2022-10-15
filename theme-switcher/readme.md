@@ -118,6 +118,10 @@ The value set for this option should be the type of the theme.
 
 ## Changelog
 ```html
+Version 2.0.1 | October 15th, 2022
+- Code Optimization (Thanks to PlaceCloud for Suggestions)
+```
+```html
 Version 2.0.0 | October 14th, 2022
 - Complete Re-write by AADev
 - Added support for multiple positions

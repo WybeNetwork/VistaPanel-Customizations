@@ -17,7 +17,7 @@ class ThemeSwitcher {
     #themeList;
     #curTheme = '';
 
-    constructor(themeList, args={baseURL:'https://vpt.cdn.wybenetwork.com/', position:'bottom'}) {
+    constructor(themeList, args) {
         this.#themeList = themeList;
         this.#position = (args.position) ? args.position : 'bottom';
         this.#baseURL = (args.baseURL) ? args.baseURL : 'https://vpt.cdn.wybenetwork.com/';
