@@ -18,7 +18,7 @@ class ThemeSwitcher {
     #defaultThemeName;
     curTheme = '';
 
-    constructor(themeList, args) {
+    constructor(themeList, args={}) {
         this.#themeList = themeList;
         this.#defaultThemeName = (args.default) ? `${args.default.dir}___${args.default.type}` : null;
         this.#position = args.position ?? 'bottom';
