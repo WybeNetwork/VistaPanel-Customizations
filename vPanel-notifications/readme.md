@@ -1,5 +1,5 @@
 # vPanel Notifications
-> :warning: Browser support is limited. For complete details of browser support check [Notification Web API Docs](https://developer.mozilla.org/en-US/docs/Web/API/notification#see_also)
+> :warning: Browser support is limited. For complete details of browser support check [Notification Web API Docs](https://developer.mozilla.org/en-US/docs/Web/API/notification#browser_compatibility)
 
 Push notification system for MyOwnFreeHost users to send notifications with clickable action to users who are logged into the vPanel. This system is based on the [Notification Web API](https://developer.mozilla.org/en-US/docs/Web/API/notification) of JavaScript.
 
