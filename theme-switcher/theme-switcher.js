@@ -4,7 +4,7 @@
 * Description: Allows you to add an option in your MyOwnFreeHost vPanel to allow users to switch to any theme that they want
 * Author: Wybe Network (https://wybenetwork.com/)
 * Created: AADev (October 14th, 2022)
-* Updated: AADev (October 15th, 2022)
+* Updated: AADev (October 16th, 2022)
 * Thanks to PlanetCloud for Code Optimization tips
 * Docs: https://docs.wybenetwork.com/
 *
@@ -35,8 +35,7 @@ class ThemeSwitcher {
     }
 
     #insertBottom() {
-        let el = `<form>` +
-            `<select id="wn-theme-switcher" onchange="wnThemeSwitcher.setActiveStyle(value);" name="ext">`;
+        let el = `<form><select id="wn-theme-switcher" onchange="wnThemeSwitcher.setActiveStyle(value);" name="ext">`;
 
         el += `<option value="${this.#defaultThemeName ?? 'default___normal'}" ${((this.#defaultThemeName === this.curTheme) || (this.curTheme === 'Default')) ? 'selected' : ''}>Default</option>`;
 
@@ -44,18 +43,15 @@ class ThemeSwitcher {
             el += `<option value="${val.dir}___${val.type}" ${((val.dir + '___' + val.type) === this.curTheme) ? 'selected' : ''}>${val.title}</option>`;
         });
 
-        el += `</select>` +
-            `</form>`;
+        el += `</select></form>`;
         document.getElementById("content").insertAdjacentHTML('beforeend', el);
     }
 
     #insertUserNav() {
         const style = document.createElement('style');
-        style.innerHTML = `
-        #wnThemeSwitcher #lnkUserPrefChangePwd:before {
+        style.innerHTML = `#wnThemeSwitcher #lnkUserPrefChangePwd:before {
             content: "\\f1fc"!important;
-        }
-        `;
+        }`;
         document.head.appendChild(style);
         const el = document.getElementById('lnkUserPrefChangeLang').parentElement;
         const newEl = document.createElement('li');

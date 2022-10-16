@@ -118,8 +118,9 @@ The value set for this option should be the type of the theme.
 
 ## Changelog
 ```html
-Version 2.0.3 | October 15th, 2022
+Version 2.0.3 | October 16th, 2022
 - Bugs Fixes
+- Code Improved
 - Switched from Cookies to Local Storage
 - Added option for switching back to default theme
 ```
