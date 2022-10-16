@@ -15,7 +15,7 @@ You can use one of the two options to load script
 
 #### Our CDN
 ```html
-<script src="https://vpc.cdn.wybenetwork.com/vPanel-notifications/vpanel-notifications.min.js" type="text/javascript"></script>
+<script src="https://vpc.cdn.wybenetwork.com/vpanel-notifications/vpanel-notifications.min.js" type="text/javascript"></script>
 ```
 
 #### Manual
