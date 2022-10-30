@@ -6,7 +6,7 @@ Alert system for MyOwnFreeHost users to send notifications or alerts with clicka
 - Set delay in milliseconds to display alert after that delay
 - Set interval in milliseconds to automatically close alert after that interval
 - Display only once to each user
-- Display to limited number of users (by list of username)
+- ~Display to limited number of users (by list of username)~ (Deprecated due to security risk)
 - Set custom icon, title and description for alert
 - Close button to close the alert
 
@@ -40,7 +40,6 @@ Example configuration
             desc: 'this is a test', // content of your alert (required)
             delay: 1000, // set delay in ms to show alert after that time (optional)
             interval: 5000, // set interval in ms to close alert after that time (optional)
-            user: ['prefx_xxxxxxxx', 'prefx_xxxxxxx2'], // set list of users to show alert to only those users (optional)
             url: 'https://wybenetwork.com' // set link to open when alert is clicked (optional)
         },
         {
@@ -67,6 +66,12 @@ Example configuration
 > **NOTE: You must use different id for different notifications generated**
 
 ## Changelog
+```html
+Version 1.0.2 | October 30th, 2022
+- ~Display to limited number of users (by list of username)~ (Deprecated due to security risk)
+- Fixed Bugs
+```
+
 ```html
 Version 1.0.1 | October 28th, 2022
 - Complete Re-write of Old Version

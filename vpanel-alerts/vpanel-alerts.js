@@ -84,7 +84,7 @@ class vPanelAlerts {
         let alID = localStorage.getItem('wnAlerts') ?? '';
         const al_id = (alID) ? alID.split('|') : '';
         this.#alert.forEach((v) => {
-            if (((v.user) ? v.user.includes(PAGE.userName) : 1) && ((al_id) ? !al_id.includes(v.id) : 1)) {
+            if (((al_id) ? !al_id.includes(v.id) : 1)) {
                 const html = `
                 <div id="wnalert_${v.id}" class="wnAlert">
                     <div class="panel" style="transform: translateX(0); ${v.url ? 'cursor: pointer;' : ''}" ${(v.url) ? `onclick="window.open('${v.url}', '_blank')"` : ''}>
