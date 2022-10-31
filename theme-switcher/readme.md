@@ -1,14 +1,15 @@
 # Theme Switcher
-> :warning: This documentation is for version 2 of Theme Switcher. If you are still using Theme switcher version 1, then refer to these [Docs](/readme_v1.md)
+> **Warning**:  
+> This documentation is for version 2 of Theme Switcher. If you are still using Theme switcher version 1, then refer to [this](/readme_v1.md).
 
 ## What does it do?
-As the name suggests, it allows you to add no. of themes with an option for your user to switch between different vPanel themes.
+As the name suggests, it allows you to add vPanel themes, with an option for your user to switch between different ones.
 
 ## Features
-- Set Default Theme
+- Set a default theme
 - Use custom domain or our CDN for themes (Supports Normal, Special & Lite Themes)
-- Display in one of the two places (Footer OR User nav bar)
-- Uses Cookies to keep the user choice saved
+- Display in one of the two places (Footer OR User navbar)
+- Uses cookies to keep the user choice saved
 
 ## What Normal, Special & Lite Types Mean?
 **Normal themes** in our themes repository have two stylesheets `styles.css` & `icon_spritemap.css`
@@ -16,7 +17,7 @@ As the name suggests, it allows you to add no. of themes with an option for your
 **Lite & Special themes** have only one file. For **lite themes** the name of file is `styles.css` and for **Special themes** the name of file is `panel.css`
 
 ## How to install?
-First load the script in footer advert area.
+First load the script in the footer advert area.
 
 You can use one of the two options for installing this script on your vPanel.
 
@@ -27,16 +28,16 @@ You can use one of the two options for installing this script on your vPanel.
 
 ### Manual
 Download the latest available version of this script and put it on your website.
-E.g., I place `theme-switcher.min.js` file in my root folder, then I'll add it like,
+E.g., I place `theme-switcher.min.js` file in my root folder, then I'll add it like this:
 ```javascript
 <script src="https://example.tld/theme-switcher.min.js" type="text/javascript"></script>
 ```
 
 After that we must setup the script. 
 
-Now, we will make an object with name `wnThemeSwitcher`.
+Now, we will need to make an object named `wnThemeSwitcher`.
 
-Let's say I want `dark-discord` theme as default theme and allow users to switch between themes which are `gradient-blue (Normal Theme), light (Normal Theme), lightspace-blue (Special Theme)`. You can check the type of any theme in our documentation at https://docs.wybenetwork.com/vistapanel-themes/#/themes-name
+Let's say I want `dark-discord` theme as default theme and allow users to switch between themes which are `gradient-blue (Normal Theme), light-lite (Lite Theme), lightspace-blue (Special Theme)`. You can check the type of any theme in our documentation at https://docs.wybenetwork.com/vistapanel-themes/#/themes-name
 
 Example Configuration:
 ```javascript
@@ -51,9 +52,9 @@ Example Configuration:
                 type: 'normal' // type of theme
             },
             {
-                dir: 'light',
+                dir: 'light-lite',
                 title: 'Light Theme',
-                type: 'normal'
+                type: 'lite'
             },
             {
                 dir: 'lightspace-blue',

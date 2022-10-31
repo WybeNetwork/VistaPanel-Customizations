@@ -1,4 +1,4 @@
-/*!
+/*! @preserve
 * Project: Menu Item Changer
 * Version: 1.0.0
 * Description: Enable you to add, modify or remove menu items

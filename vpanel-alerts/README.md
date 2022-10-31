@@ -1,19 +1,18 @@
 # vPanel Alerts
-Alert system for MyOwnFreeHost users to send notifications or alerts with clickable action to users who are logged into the vPanel. This system is compatible with all of the [vPanel Themes](https://github.com/WybeNetwork/VistaPanel-Themes) and also adds some extra css.
+Alert system for MyOwnFreeHost users to send notifications or alerts with clickable action to users who are logged into vPanel. This system is compatible with all of the [vPanel Themes](https://github.com/WybeNetwork/VistaPanel-Themes) and also adds some extra CSS.
 
 ## Features
 - Send alerts to logged-in users
 - Set delay in milliseconds to display alert after that delay
 - Set interval in milliseconds to automatically close alert after that interval
 - Display only once to each user
-- ~Display to limited number of users (by list of username)~ (Deprecated due to security risk)
 - Set custom icon, title and description for alert
 - Close button to close the alert
 
 ## How to Install?
-Add this code in the footer advert area to load the script,
+Add this code in the footer advert area to load the script.
 
-You can use one of the two options to load script
+You can use one of the two options:
 
 #### Our CDN
 ```js
@@ -63,12 +62,13 @@ Example configuration
 | delay `int`	    | optional	  | delay: 1000 <br> ```Delay in ms (default is 0)```	            |
 | interval `int`	 | optional	  | interval: 3000 <br> ```Interval in ms (default is none)``` 	  |
 
-> **NOTE: You must use different id for different notifications generated**
+> **Note**:   
+> You must use different IDs so that different notifications are generated.**
 
 ## Changelog
 ```html
 Version 1.0.2 | October 30th, 2022
-- ~Display to limited number of users (by list of username)~ (Deprecated due to security risk)
+- Deprecated "Display to limited number of users (by list of username)" as it could be a security risk
 - Fixed Bugs
 ```
 

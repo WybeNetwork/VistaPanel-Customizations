@@ -1,13 +1,12 @@
-/*!
+/*! @preserve
 * Project: vPanel Alerts (Previously vPanel Notifications)
 * Version: 1.0.1
-* Description: Allows you to show alert to logged in user
+* Description: Allows you to show alerts to logged in users on vPanel
 * Author: Wybe Network (https://wybenetwork.com/)
 * Created: AADev (October 16th, 2022)
 * Updated: AADev (October 28th, 2022)
 * Thanks to PlanetCloud for Suggestions & code for storing multiple ids in one localstorage item
 * Docs: https://docs.wybenetwork.com/
-*
 * DO NOT REMOVE CREDITS
 * */
 
