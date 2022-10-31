@@ -1,4 +1,4 @@
-/* @preserve
+/*! @preserve
 *  Created at 15 August 2022 by Anyx.
 *  DO NOT REMOVE CREDITS!
 *  Created for: Wybe Network.

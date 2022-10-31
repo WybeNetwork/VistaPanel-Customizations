@@ -1,4 +1,4 @@
-/*!
+/*! @preserve
 * Project: Theme Switcher
 * Version: 2.0.3
 * Description: Allows you to add an option in your MyOwnFreeHost vPanel to allow users to switch to any theme that they want
