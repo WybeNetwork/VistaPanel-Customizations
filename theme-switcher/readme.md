@@ -1,6 +1,6 @@
 # Theme Switcher
 > **Warning**:  
-> This documentation is for version 2 of Theme Switcher. If you are still using Theme switcher version 1, then refer to [this](/readme_v1.md).
+> This documentation is for version 2 of Theme Switcher. If you are still using Theme switcher version 1, then refer to [this](README_v1.md).
 
 ## What does it do?
 As the name suggests, it allows you to add vPanel themes, with an option for your user to switch between different ones.

@@ -3,8 +3,8 @@
 * Version: 2.0.3
 * Description: Allows you to add an option in your MyOwnFreeHost vPanel to allow users to switch to any theme that they want
 * Author: Wybe Network (https://wybenetwork.com/)
-* Created: AADev (October 14th, 2022)
-* Updated: AADev (October 16th, 2022)
+* Created: AA22Dev (October 14th, 2022)
+* Updated: AA22Dev (October 16th, 2022)
 * Thanks to PlanetCloud for Code Optimization tips
 * Docs: https://docs.wybenetwork.com/
 *

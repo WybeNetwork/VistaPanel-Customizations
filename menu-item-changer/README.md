@@ -15,7 +15,7 @@ You can use one of the two options to load script
 
 ### Our CDN
 ```html
-<script src="https://vpc.cdn.wybenetwork.com/menuitem-changer/menuitem-changer.min.js" type="text/javascript"></script>
+<script src="https://vpc.cdn.wybenetwork.com/menu-item-changer/menu-item-changer.min.js" type="text/javascript"></script>
 ```
 
 ### Manual
@@ -23,7 +23,7 @@ Download the latest available version of this script and place it on your websit
 
 In this code example, I have added the script to the root directory of my website.
 ```html
-<script src="https://example.tld/menuitem-changer.min.js" type="text/javascript"></script>
+<script src="https://example.tld/menu-item-changer.min.js" type="text/javascript"></script>
 ```
 
 Now instantiate an object with options to add, modify or remove a menu item.
