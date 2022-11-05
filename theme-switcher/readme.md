@@ -136,7 +136,7 @@ Version 2.0.1 | October 15th, 2022
 ```
 ```html
 Version 2.0.0 | October 14th, 2022
-- Complete Re-write by AADev
+- Complete Re-write by AA22Dev
 - Added support for multiple positions
 - Improved support for themes
 - Added support for default theme.
@@ -144,7 +144,7 @@ Version 2.0.0 | October 14th, 2022
 
 ```html
 Version 1.0.1 | June 23rd, 2021
-- Bugs fixes by AADev
+- Bugs fixes by AA22Dev
 ```
 
 ```html

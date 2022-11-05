@@ -2,8 +2,8 @@
 	*   @preserve
 	*   VistaPanel Add-on
 	*   Script Name: "Change Password" Link and Text Changer
-	*   Author: AADev & Wybe Network
-	*   Author URL: https://aadev.wybenetwork.com
+	*   Author: AA22Dev & Wybe Network
+	*   Author URL: https://aa22.dev
 	*   Version: 1.0
 	*   Github Project URL: https://github.com/WybeNetwork/VistaPanel-Customizations
 	*   Official Website URL: https://wybenetwork.com
