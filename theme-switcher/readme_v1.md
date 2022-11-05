@@ -1,5 +1,5 @@
 # Theme Switcher
-> :warning: This documentation is for version 1.0 of Theme Switcher. We recommend you to update to version 2.0.3, for v2 refer to these [Docs](README.md)
+> :warning: This documentation is for version 1.0 of Theme Switcher. We recommend you to update to version 2.0.3, for v2 refer to these [Docs](readme.md)
 
 ## What does it do?
 It will add an option in VistaPanel so users can switch between themes designed by Wybe Network (and their own, if they have).
