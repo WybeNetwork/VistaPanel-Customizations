@@ -29,4 +29,4 @@ You can make use of our CDN at https://vpc.cdn.wybenetwork.com/{scriptname}/{scr
 You can find the documentation for VistaPanel customizations at https://docs.wybenetwork.com.
 
 # Copyright Info
-Copyright 2019-2022 © Wybe Network. All Rights Reserved, check the [LICENSE](LICENSE.md) for more details.
+Copyright 2018-2023 © Wybe Network. All Rights Reserved, check the [LICENSE](LICENSE.md) for more details.
