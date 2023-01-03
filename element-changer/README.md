@@ -118,7 +118,7 @@ To solve this, we need an external service which adds the correct type, like jsD
 
 The code, using jsDelivr:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.3.0/element-changer/element-changer.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.3.1/element-changer/element-changer.js" type="text/javascript"></script>
 ```
 Alternatively, you can use our CDN:
 ```html
