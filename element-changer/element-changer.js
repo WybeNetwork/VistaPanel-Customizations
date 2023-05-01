@@ -1,20 +1,21 @@
-/*! @preserve
-*  Created at 15 September 2022 by Anyx and modified by PlanetCloud.
-*  Modified at 19 September 2022 by PlanetCloud.
-*  Last modified at 25 September 2022 by PlanetCloud.
-*  DO NOT REMOVE CREDITS!
-*  Created for: Wybe Network.
-*/
+/** @preserve
+ *  Created at 15th September 2022 by Anyx and modified by PlanetCloud.
+ *  Modified at 19th September 2022 by PlanetCloud.
+ *  Modified at 25th September 2022 by PlanetCloud.
+ *  Last modified at 1st May 2023 by PlanetTheCloud (PlanetCloud).
+ *  DO NOT REMOVE CREDITS!
+ *  Created for: Wybe Network.
+ */
 function indexAppGroups() {
     let elementsIndex = [],
         groupsIndex = [],
         g = i = 0;
     PAGE.appGroups.forEach(group => {
         group.items.forEach(item => {
-            if (typeof elementsIndex[item.itemdesc] == 'undefined') {
-                elementsIndex[item.itemdesc] = [];
+            if (typeof elementsIndex[item.file] == 'undefined') {
+                elementsIndex[item.file] = [];
             }
-            elementsIndex[item.itemdesc].push({
+            elementsIndex[item.file].push({
                 group: g,
                 item: i
             });
@@ -64,7 +65,7 @@ function indexAppGroups() {
                 return console.log(`ElementChanger: Trying to remove element "${r.name}" which does not exist.`)
             }
             elementsIndex[r.name].forEach(e => {
-                PAGE.appGroups[e.group].items = PAGE.appGroups[e.group].items.filter(i => i.itemdesc != r.name);
+                PAGE.appGroups[e.group].items = PAGE.appGroups[e.group].items.filter(i => i.file != r.name);
             });
         });
     }
@@ -106,23 +107,23 @@ function indexAppGroups() {
     });
 
     // Add icons to added elements
-    function fixIcons() {
+    function ElementChanger_AddMissingIcons() {
         if (document.getElementById('preferences-group') === null) {
             return setTimeout(() => {
-                fixIcons();
+                ElementChanger_AddMissingIcons();
             }, 100);
         }
         if (addedElementsIcon.length < 1) {
             return;
         }
-        console.log('ElementChanger: Fixing icons');
+        console.log('ElementChanger: Adding icons...');
         addedElementsIcon.forEach(e => {
             document.getElementById(e.target).innerHTML = `<img class="itemImageWrapper integrations_icon spriteicon_img" src="${e.icon}"/>`
         });
         return console.log('ElementChanger: All modifications have been made.');
     }
     document.addEventListener("DOMContentLoaded", () => {
-        fixIcons();
+        ElementChanger_AddMissingIcons();
     });
 
     // Done!
