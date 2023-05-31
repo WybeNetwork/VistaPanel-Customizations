@@ -12,76 +12,26 @@ You'll first need to declare an array with the name ``changeElements`` within a 
 
 To add an element, you will need to create an object with the following properties that we'll analyze afterwards:
 ```js
-{name: "Element Identifier", action: "add", group: "Group name", link: "#link", icon: "URL to icon", search_text: "words for the search bar divided with spaces"}
+{action: "add", name: "Element name", group: "Group name", link: "#link", icon: "URL to icon", search_text: "words for the search bar divided with spaces"}
 ```
 To change an element, you will need to create an object with the following properties that we'll analyze afterwards:
 ```js
-{name: "Element Identifier", action: "modify", attr: "attribute", value: "new value"}
+{action: "modify", name: "Element identifier", attr: "attribute", value: "new value"}
 ```
 To remove an element, the object will be structured like this:
 ```js
-{name: "Element Identifier", action: "remove"}
+{action: "remove", name: "Element identifier"}
 ```
-**Element Identifier can be found in the table below.**
 
 ### Properties
+
 #### Common Properties
-In `name`, you'll assign an identifier that corresponds with the table below.
-Find the **item name** you wanted to change/remove, then assign the **identifier** of said **item name** to the `name` property.
-
-| group       | **identifier**            | item name                  |
-|-------------|---------------------------|----------------------------|
-| preferences | change_password           | Change Password            |
-| preferences | change_language           | Change Language            |
-| preferences | contact_information       | Update Contact Email       |
-| preferences | backup_wizard             | Getting Started            |
-| preferences | two_factor_authentication | Account Upgrades           |
-| preferences | user_manager              | Account Settings           |
-| files       | file_manager              | Online File Manager        |
-| files       | directory_privacy         | Directory Privacy          |
-| files       | disk_usage                | Disk Usage                 |
-| files       | ftp_accounts              | FTP Accounts               |
-| files       | ftp_connections           | Free FTP Software          |
-| files       | backup                    | Backups                    |
-| databases   | php_my_admin              | phpMyAdmin                 |
-| databases   | mysql_databases           | MySQL Databases            |
-| databases   | remote_mysql              | Remote MySQL               |
-| databases   | postgresql_databases      | PostgreSQL Databases       |
-| domains     | addon_domains             | Addon Domains              |
-| domains     | subdomains                | Sub Domains                |
-| domains     | aliases                   | Aliases (Parked Domains)   |
-| domains     | redirects                 | Redirects                  |
-| email       | accounts                  | Email Accounts             |
-| email       | forwarders                | Forwarders                 |
-| email       | mx_entry                  | MX Entry                   |
-| email       | advanced_zone_editor      | SPF Records                |
-| email       | email_filters             | Webmail                    |
-| metrics     | awstats                   | Account Statistics         |
-| metrics     | errors                    | Error Logs                 |
-| metrics     | php                       | General PHP Info           |
-| metrics     | raw_access                | Access Logs                |
-| security    | ip_blocker                | IP Blocker                 |
-| security    | ssl_tls                   | SSL/TLS                    |
-| software    | sitereptile               | SiteBuilder                |
-| software    | softaculous               | Softaculous Apps Installer |
-| software    | attracta_seotips          | SEO Tools                  |
-| software    | multiphp_configuration    | Alter PHP Config           |
-| software    | lvephpsel                 | Select PHP Version         |
-| advanced    | cron_jobs                 | Cron Jobs                  |
-| advanced    | simple_zone_editor        | CNAME Records              |
-| advanced    | error_pages               | Error Pages                |
-| soft_div    | soft_div_icons            | Softaculous Apps Installer |
-| support     | cloudflare_performance    | Domain Types               |
-| support     | cloudflare_analytics      | Tutorials                  |
-| support     | attracta_seotools         | Support Forum              |
-| support     | createticket              | Create New Ticket          |
-| support     | ShowTickets               | Open Support Tickets       |
-| support     | api_shell                 | Closed Support Tickets     |
-
 The action you wish to perform will be defined in ``action``. There are three actions supported, ``add``, ``modify`` and ``remove``.  
 If you declare no action in your object the script will assume ``modify `` to be the intended action.
 
 #### Adding Elements
+In ``name``, you'll assign a value that corresponds with the name of the element exactly as you want it to appear on the panel.
+
 In ``group``, you'll need to enter the name of the group in which you desire to add the new element in.  
 The names might be different than the ones appearing on the panel, so we are listing them below:
 
@@ -106,6 +56,59 @@ The names might be different than the ones appearing on the panel, so we are lis
 Finally, you can enter any text in ``search_text`` that will be used for the search utility the panel offers (to locate your element). Words are divided by spaces.
 
 #### Changing Elements
+In `name`, you'll assign an identifier that corresponds with the table below.
+Look up the name of the item you want to change _as it appears on the panel_, then assign the **identifier** of said item name to the `name` property.
+
+| Group       | Item name                  | Identifier                |
+|-------------|----------------------------|---------------------------|
+| preferences | Change Password            | change_password           |
+| preferences | Change Language            | change_language           |
+| preferences | Update Contact Email       | contact_information       |
+| preferences | Getting Started            | backup_wizard             |
+| preferences | Account Upgrades           | two_factor_authentication |
+| preferences | Account Settings           | user_manager              |
+| files       | Online File Manager        | file_manager              |
+| files       | Directory Privacy          | directory_privacy         |
+| files       | Disk Usage                 | disk_usage                |
+| files       | FTP Accounts               | ftp_accounts              |
+| files       | Free FTP Software          | ftp_connections           |
+| files       | Backups                    | backup                    |
+| databases   | phpMyAdmin                 | php_my_admin              |
+| databases   | MySQL Databases            | mysql_databases           |
+| databases   | Remote MySQL               | remote_mysql              |
+| databases   | PostgreSQL Databases       | postgresql_databases      |
+| domains     | Addon Domains              | addon_domains             |
+| domains     | Sub Domains                | subdomains                |
+| domains     | Aliases (Parked Domains)   | aliases                   |
+| domains     | Redirects                  | redirects                 |
+| email       | Email Accounts             | accounts                  |
+| email       | Forwarders                 | forwarders                |
+| email       | MX Entry                   | mx_entry                  |
+| email       | SPF Records                | advanced_zone_editor      |
+| email       | Webmail                    | email_filters             |
+| metrics     | Account Statistics         | awstats                   |
+| metrics     | Error Logs                 | errors                    |
+| metrics     | General PHP Info           | php                       |
+| metrics     | Access Logs                | raw_access                |
+| security    | IP Blocker                 | ip_blocker                |
+| security    | SSL/TLS                    | ssl_tls                   |
+| software    | SiteBuilder                | sitereptile               |
+| software    | Softaculous Apps Installer | softaculous               |
+| software    | SEO Tools                  | attracta_seotips          |
+| software    | Alter PHP Config           | multiphp_configuration    |
+| software    | Select PHP Version         | lvephpsel                 |
+| advanced    | Cron Jobs                  | cron_jobs                 |
+| advanced    | CNAME Records              | simple_zone_editor        |
+| advanced    | Error Pages                | error_pages               |
+| soft_div    | Softaculous Apps Installer | soft_div_icons            |
+| support     | Domain Types               | cloudflare_performance    |
+| support     | Tutorials                  | cloudflare_analytics      |
+| support     | Support Forum              | attracta_seotools         |
+| support     | Create New Ticket          | createticket              |
+| support     | Open Support Tickets       | ShowTickets               |
+| support     | Closed Support Tickets     | api_shell                 |
+
+##### Modifying Elements
 ``attr`` is the attribute you wish to modify. There are two main attributes:
 ``itemdesc`` and ``url``. 
 The first defines the name the element will have on the panel, while the second, as you can tell by the name, defines the URL for it.
@@ -117,7 +120,7 @@ Finally, ``value`` holds the new value of the element you'll be changing, for ex
 An example that adds an element named ``Custom`` in ``Databases`` linking to ``https://yourdomain.com`` with an image and ``custom`` as its search text can be seen below:
 ```js
 var changeElements = [
-    {name: "Custom", action: "add", group: "databases", link: "https://yourdomain.com", icon: "https://play-lh.googleusercontent.com/yPtnkXQAn6yEahOurxuYZL576FDXWn3CqewVcEWJsXlega_nSiavBvmaXwfTGktGlQ", search_text: "custom"}
+    {name: "Custom", action: "add", group: "databases", link: "https://yourdomain.com", icon: "https://seekicon.com/free-icon-download/database-cloud_1.png", search_text: "custom"}
 ];
 ```
 
@@ -149,7 +152,7 @@ We'll provide a ready code for adding our custom element from above, modifying t
 ```html
 <script type="text/javascript">
 var changeElements = [
-    {name: "Custom", action: "add", group: "databases", link: "https://yourdomain.com", icon: "https://play-lh.googleusercontent.com/yPtnkXQAn6yEahOurxuYZL576FDXWn3CqewVcEWJsXlega_nSiavBvmaXwfTGktGlQ", search_text: "custom"},
+    {name: "Custom", action: "add", group: "databases", link: "https://yourdomain.com", icon: "https://seekicon.com/free-icon-download/database-cloud_1.png", search_text: "custom"},
     {name: "sitereptile", action: "modify", attr: "itemdesc", value: "VistaPanel Themes"},
     {name: "sitereptile", action: "modify", attr: "url", value: "https://vpt.cdn.wybenetwork.com"},
     {name: "softaculous", action: "modify", attr: "itemdesc", value: "VistaPanel Customizations"},
@@ -173,7 +176,7 @@ To solve this, we need an external service which adds the correct type, like jsD
 
 The code, using jsDelivr:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.3.1/element-changer/element-changer.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.3.2/element-changer/element-changer.js" type="text/javascript"></script>
 ```
 
 Alternatively, you can use our CDN:
@@ -185,7 +188,7 @@ A full code utilizing our example and our CDN:
 ```html
 <script type="text/javascript">
 var changeElements = [
-    {name: "Custom", action: "add", group: "databases", link: "https://yourdomain.com", icon: "https://play-lh.googleusercontent.com/yPtnkXQAn6yEahOurxuYZL576FDXWn3CqewVcEWJsXlega_nSiavBvmaXwfTGktGlQ", search_text: "custom"},
+    {name: "Custom", action: "add", group: "databases", link: "https://yourdomain.com", icon: "https://seekicon.com/free-icon-download/database-cloud_1.png", search_text: "custom"},
     {name: "sitereptile", action: "modify", attr: "itemdesc", value: "VistaPanel Themes"},
     {name: "sitereptile", action: "modify", attr: "url", value: "https://vpt.cdn.wybenetwork.com"},
     {name: "softaculous", action: "modify", attr: "itemdesc", value: "VistaPanel Customizations"},
@@ -202,5 +205,5 @@ var changeElements = [
 ## Changelog
 * Created on 15th September 2022 by [Anyx](https://github.com/4yx)
 * Modified on 15th September 2022 by [PlanetCloud](https://github.com/PlanetTheCloud)
-* Modifier on 19th September 2022 by [PlanetCloud](https://github.com/PlanetTheCloud)
-* Last modified on 1st May 2022 by [PlanetTheCloud (Aka PlanetCloud)](https://github.com/PlanetTheCloud)
+* Modified on 19th September 2022 by [PlanetCloud](https://github.com/PlanetTheCloud)
+* Last modified on 1st May 2022 by [PlanetCloud](https://github.com/PlanetTheCloud)

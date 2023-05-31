@@ -32,7 +32,7 @@ The full code, using jsDelivr:
 	 affCode = "AFFILIATE_CODE_HERE";
 	*/
 </script>
-<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.3.1/responsive-domain-search/responsive-domain-search.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.3.2/responsive-domain-search/responsive-domain-search.js" type="text/javascript"></script>
 ```
 Alternatively, you can use our CDN:
 ```html
