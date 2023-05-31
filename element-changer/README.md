@@ -27,7 +27,7 @@ To remove an element, the object will be structured like this:
 
 #### Common Properties
 The action you wish to perform will be defined in ``action``. There are three actions supported, ``add``, ``modify`` and ``remove``.  
-If you declare no action in your object the script will assume ``modify `` to be the intended action.
+If you declare no action in your object the script will assume ``modify`` to be the intended action.
 
 #### Adding Elements
 In ``name``, you'll assign a value that corresponds with the name of the element exactly as you want it to appear on the panel.
