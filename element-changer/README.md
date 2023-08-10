@@ -1,13 +1,13 @@
-# Element Changer  
+# Element Changer
 
-## What does it do?  
+## What does it do?
 As the name might suggest, it allows you to modify any VistaPanel widget element! _(Well, aside from the right sidebar ones.)_  
 You are able to add, change and remove elements.
 
-## Where should I put it?  
+## Where should I put it?
 You can put it anywhere! We recommend avoiding the left advert area, as it will break the sidebar.
 
-## How can I install it?   
+## How can I install it?
 You'll first need to declare an array with the name ``changeElements`` within a script tag.  
 
 To add an element, you will need to create an object with the following properties that we'll analyze afterwards:
@@ -145,26 +145,6 @@ var changeElements = [
 > **Note**  
 > Objects are separated by commas, so don't forget to include them when adding a new one.
 
-### What is all of this? Where is my ready-to-use code?
-Please read the Properties section before attempting to make your own modifications.
-
-We'll provide a ready code for adding our custom element from above, modifying the names and URLs of ``SiteBuilder`` and ``Softaculous Apps Installer``, and removing ``Access Logs`` and ``Remote MySQL``. Try it out in your panel (with the script, of course) to be able to better understand the process in adding your own objects.
-```html
-<script type="text/javascript">
-var changeElements = [
-    {name: "Custom", action: "add", group: "databases", link: "https://yourdomain.com", icon: "https://seekicon.com/free-icon-download/database-cloud_1.png", search_text: "custom"},
-    {name: "sitereptile", action: "modify", attr: "itemdesc", value: "VistaPanel Themes"},
-    {name: "sitereptile", action: "modify", attr: "url", value: "https://vpt.cdn.wybenetwork.com"},
-    {name: "softaculous", action: "modify", attr: "itemdesc", value: "VistaPanel Customizations"},
-    {name: "softaculous", action: "modify", attr: "url", value: "https://vpc.cdn.wybenetwork.com"},
-    {name: "soft_div_icons", action: "modify", attr: "itemdesc", value: "VistaPanel Customizations"},
-    {name: "soft_div_icons", action: "modify", attr: "url", value: "https://vpc.cdn.wybenetwork.com"},
-    {name: "raw_access", action: "remove"},
-    {name: "remote_mysql", action: "remove"}
-];
-</script>
-```
-
 ### So where's that script, anyway?
 Create a script tag with `src` pointing to `element-changer.js` or ``element-changer.min.js`` for the minified version.  
 
@@ -184,7 +164,15 @@ Alternatively, you can use our CDN:
 <script src="https://vpc.cdn.wybenetwork.com/element-changer/element-changer.js" type="text/javascript"></script>
 ```
 
-A full code utilizing our example and our CDN:
+#### What is all of this? Where is my ready-to-use code?
+Please read the Properties section before attempting to make your own modifications.
+
+We'll provide two ready code examples:
+
+##### Example 1: Ability Demonstration
+A ready code for adding our custom element from above, modifying the names and URLs of ``SiteBuilder`` and ``Softaculous Apps Installer``, and removing ``Access Logs`` and ``Remote MySQL``. Try it out in your panel (with the script, of course) to be able to better understand the process in adding your own objects.
+
+The full code utilizing our example and our CDN:
 ```html
 <script type="text/javascript">
 var changeElements = [
@@ -197,6 +185,28 @@ var changeElements = [
     {name: "soft_div_icons", action: "modify", attr: "url", value: "https://vpc.cdn.wybenetwork.com"},
     {name: "raw_access", action: "remove"},
     {name: "remote_mysql", action: "remove"}
+];
+</script>
+<script src="https://vpc.cdn.wybenetwork.com/element-changer/element-changer.js" type="text/javascript"></script>
+```
+##### Example 2: Remove unneeded elements
+A ready code for removing all elements that are not needed, usually because the features they describe have been deprecated and are no longer offered or were never offered to begin with.
+
+The full code utilizing our example and our CDN:
+```html
+<script type="text/javascript">
+var changeElements = [
+    {name: "remote_mysql", action: "remove"},
+    {name: "postgresql_databases", action: "remove"},
+    {name: "accounts", action: "remove"},
+    {name: "forwarders", action: "remove"},
+    {name: "email_filters", action: "remove"},
+    {name: "errors", action: "remove"},
+    {name: "raw_access", action: "remove"},
+    {name: "sitereptile", action: "remove"},
+    {name: "attracta_seotips", action: "remove"},
+    {name: "lvephpsel", action: "remove"},
+    {name: "cron_jobs", action: "remove"}
 ];
 </script>
 <script src="https://vpc.cdn.wybenetwork.com/element-changer/element-changer.js" type="text/javascript"></script>
