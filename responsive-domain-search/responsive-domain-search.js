@@ -6,6 +6,9 @@
 *  Created for: Wybe Network.
 */
 document.addEventListener("DOMContentLoaded", function() {
+    const urlParams_vpc_rds = new URLSearchParams(window.location.search);
+    const option_vpc_rds = urlParams_vpc_rds.get('option') || 'home';
+    if (option_vpc_rds == "home") {
     if ("undefined" == typeof affCode) affCode = "25147";
     (function(b, a) {
         for (var c = 0; c < b.length; c++) a(b[c])
@@ -26,4 +29,5 @@ document.addEventListener("DOMContentLoaded", function() {
         widget.innerHTML = "";
         widget.appendChild(row)
     })
+    }
 });
