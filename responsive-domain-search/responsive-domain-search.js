@@ -1,15 +1,20 @@
 /*! @preserve
 *  Created at 10 July and modified at 02 November 2018 by PlanetCloud.
 *  Modified at 16 March 2019 by Dog2puppy.
-*  Last modified at 06 August 2022 by Anyx.
+*  Modified at 06 August 2022 by Anyx.
+*  Last modified at 09 November 2023 by SpookyKipper.
 *  DO NOT REMOVE CREDITS!
 *  Created for: Wybe Network.
 */
-document.addEventListener("DOMContentLoaded", function() {
-    const urlParams_vpc_rds = new URLSearchParams(window.location.search);
-    const option_vpc_rds = urlParams_vpc_rds.get('option') || 'home';
-    if (option_vpc_rds == "home") {
+document.addEventListener("DOMContentLoaded", function () {
+    /* Ensure we only run on the home page: if we're on any other page, function execution ends  */
+    const option = new URLSearchParams(window.location.search).get('option');
+    if (option !== null) return;
+
+    /* Set affiliate code: if one has not been set, use PlanetCloud's as default */
     if ("undefined" == typeof affCode) affCode = "25147";
+
+    /* Replace the default domain checker form with a responsive version */
     (function(b, a) {
         for (var c = 0; c < b.length; c++) a(b[c])
     })(document.querySelectorAll('form[action^="https://ifastnet.com/portal/domainchecker.php"]'), function(b) {
@@ -29,5 +34,4 @@ document.addEventListener("DOMContentLoaded", function() {
         widget.innerHTML = "";
         widget.appendChild(row)
     })
-    }
 });

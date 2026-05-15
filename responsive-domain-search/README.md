@@ -4,8 +4,7 @@
 It makes the VistaPanel search form responsive, so that it does not break the vP theme(s).
 
 ## Where should I put it?  
-Put it in the Header Advert Area (IMPORTANT). 
-Due to [this issue](https://github.com/VPTOfficial/VistaPanel-Customizations/issues/4) reported by [AA22Dev](https://github.com/aa22dev), the code doesn't seem to run properly if you put it elsewhere. Thanks for reporting it.  
+You can put it anywhere, although we recommend to put it on the Header or Footer Advert Area.  
 
 ## How can I install it?   
 Create a script tag with `src` pointing to `responsive-domain-search.js` or `responsive-domain-search.min.js` for the minified version.  
@@ -34,6 +33,7 @@ The full code, using jsDelivr:
 </script>
 <script src="https://cdn.jsdelivr.net/gh/WybeNetwork/VistaPanel-Customizations@2.3.2/responsive-domain-search/responsive-domain-search.js" type="text/javascript"></script>
 ```
+
 Alternatively, you can use our CDN:
 ```html
 <script type="text/javascript">
@@ -43,7 +43,9 @@ Alternatively, you can use our CDN:
 </script>
 <script src="https://vpc.cdn.wybenetwork.com/responsive-domain-search/responsive-domain-search.js" type="text/javascript"></script>
 ```
+
 Do not forget to remove the comment lines symbols (``/* OPTIONAL``and ``*/``) if you want your affiliate code to work.
+
 ## Changelog
 * Created on 10 July 2018 by [PlanetCloud](https://github.com/PlanetTheCloud)  
 * Modified on 27 July 2018 by Christine (Cyrl)  
@@ -51,4 +53,5 @@ Do not forget to remove the comment lines symbols (``/* OPTIONAL``and ``*/``) if
 * Modified on 28 September 2018 by [AA22Dev](https://github.com/aa22dev) and [Anyx](https://github.com/4yx)
 * Modified on 30 September 2018 by [PlanetCloud](https://github.com/PlanetTheCloud)  
 * Modified on 22 November 2018 by [Anyx](https://github.com/4yx)
-* Last modified on 06 August 2022 by [Anyx](https://github.com/4yx)
+* Modified on 06 August 2022 by [Anyx](https://github.com/4yx)
+* Last modified on 09 November 2023 by [SpookyKipper](https://github.com/SpookyKipper)
