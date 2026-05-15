@@ -203,9 +203,9 @@ var changeElements = [
     {name: "email_filters", action: "remove"},
     {name: "errors", action: "remove"},
     {name: "raw_access", action: "remove"},
-    {name: "sitereptile", action: "remove"},
     {name: "attracta_seotips", action: "remove"},
     {name: "lvephpsel", action: "remove"},
+    {name: "third_party_plugins", action: "remove"},
     {name: "cron_jobs", action: "remove"}
 ];
 </script>
